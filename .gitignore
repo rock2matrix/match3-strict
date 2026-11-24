@@ -1,0 +1,5 @@
+/build/
+/out/
+/install/
+/CMakeUserPresets.json
+*.m3cert

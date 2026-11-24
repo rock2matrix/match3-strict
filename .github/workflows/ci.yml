@@ -1,0 +1,225 @@
+name: CI and tagged release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*.*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Version tag matching the CMake project version (for example v0.1.0)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and test (${{ matrix.runner }})
+    if: github.event_name != 'push' || !github.event.deleted
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-24.04
+            asset: match3-strict-linux-x64
+            executable: match3-solve
+          - runner: windows-latest
+            asset: match3-strict-windows-x64
+            executable: match3-solve.exe
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Configure Release
+        run: |
+          $platform = if ($IsWindows) {
+            @('-A', 'x64', '-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded')
+          } else {
+            @('-DCMAKE_EXE_LINKER_FLAGS=-static-libgcc -static-libstdc++')
+          }
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release @platform
+
+      - name: Build
+        run: cmake --build build --config Release --parallel 2
+
+      - name: Run CTest
+        run: ctest --test-dir build -C Release --output-on-failure
+
+      - name: Install
+        run: cmake --install build --config Release --prefix "$env:RUNNER_TEMP/match3-install"
+
+      - name: Solve and verify with the installed CLI
+        env:
+          MATCH3_EXECUTABLE: ${{ matrix.executable }}
+        run: |
+          $cli = Join-Path $env:RUNNER_TEMP "match3-install/bin/$env:MATCH3_EXECUTABLE"
+          $board = Join-Path $env:GITHUB_WORKSPACE 'examples/board-7x9.txt'
+          $certificate = Join-Path $env:RUNNER_TEMP 'fixture.m3cert'
+          $solved = @(& $cli $board 6 2 --certificate $certificate)
+          if ($LASTEXITCODE -ne 0 -or $solved[0] -ne 'WIN_CERTIFIED' -or
+              $solved -notcontains 'certificate_written=true' -or !(Test-Path -LiteralPath $certificate)) {
+            throw "Example board did not produce a verified WIN: $solved"
+          }
+          $solved | Write-Output
+          $verified = & $cli verify $board 6 2 $certificate
+          if ($LASTEXITCODE -ne 0 -or $verified -ne 'PASS') {
+            throw "Independent certificate check failed: $verified"
+          }
+          $verified | Write-Output
+
+      - name: Smoke-test the installed CMake target
+        run: |
+          $consumer = Join-Path $env:RUNNER_TEMP 'match3-consumer'
+          New-Item -ItemType Directory -Path $consumer -Force | Out-Null
+          @'
+          cmake_minimum_required(VERSION 3.20)
+          project(match3_consumer LANGUAGES CXX)
+          find_package(match3_strict CONFIG REQUIRED)
+          add_executable(consumer main.cpp)
+          target_link_libraries(consumer PRIVATE match3_strict::match3_strict)
+          '@ | Set-Content -LiteralPath "$consumer/CMakeLists.txt"
+          Copy-Item -LiteralPath 'examples/basic.cpp' -Destination "$consumer/main.cpp"
+          $platform = @()
+          if ($IsWindows) {
+            $platform = @('-A', 'x64', '-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded')
+          }
+          cmake -S $consumer -B "$consumer/build" -DCMAKE_BUILD_TYPE=Release `
+            "-DCMAKE_PREFIX_PATH=$env:RUNNER_TEMP/match3-install" @platform
+          if ($LASTEXITCODE -ne 0) { throw 'Installed CMake package did not configure' }
+          cmake --build "$consumer/build" --config Release --parallel 2
+          if ($LASTEXITCODE -ne 0) { throw 'Installed CMake package did not link' }
+          $program = if ($IsWindows) { "$consumer/build/Release/consumer.exe" } else { "$consumer/build/consumer" }
+          & $program
+
+      - name: Package CLI ZIP
+        env:
+          MATCH3_EXECUTABLE: ${{ matrix.executable }}
+          MATCH3_ASSET: ${{ matrix.asset }}
+        run: |
+          $package = Join-Path $env:RUNNER_TEMP 'match3-package'
+          $cli = Join-Path $env:RUNNER_TEMP "match3-install/bin/$env:MATCH3_EXECUTABLE"
+          $archive = Join-Path $env:GITHUB_WORKSPACE "dist/$env:MATCH3_ASSET.zip"
+          New-Item -ItemType Directory -Path 'dist', "$package/examples" -Force | Out-Null
+          Copy-Item -LiteralPath $cli, 'LICENSE', 'README.md', 'README.zh-CN.md' -Destination $package
+          Copy-Item -LiteralPath 'examples/board-7x9.txt' -Destination "$package/examples"
+          if ($IsWindows) {
+            Compress-Archive -Path "$package/*" -DestinationPath $archive -Force
+          } else {
+            chmod +x "$package/$env:MATCH3_EXECUTABLE"
+            if ($LASTEXITCODE -ne 0) { throw 'Could not set CLI permissions' }
+            Push-Location $package
+            try {
+              zip -q -r $archive .
+              if ($LASTEXITCODE -ne 0) { throw 'Could not create CLI ZIP' }
+            } finally {
+              Pop-Location
+            }
+          }
+
+      - name: Upload CLI artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ${{ matrix.asset }}
+          path: dist/${{ matrix.asset }}.zip
+          if-no-files-found: error
+          overwrite: true
+
+  release:
+    name: Publish tagged release
+    needs: build
+    if: >-
+      (github.event_name == 'push' && !github.event.deleted && startsWith(github.ref, 'refs/tags/v'))
+      || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    concurrency:
+      group: match3-release-${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Check out the tested commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Download both tested ZIPs
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: match3-strict-*-x64
+          path: release-assets
+          merge-multiple: true
+
+      - name: Package source and publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
+        run: |
+          set -euo pipefail
+          version=$(sed -nE 's/^[[:space:]]*project[[:space:]]*\([[:space:]]*match3_strict[[:space:]]+VERSION[[:space:]]+([0-9]+\.[0-9]+\.[0-9]+)[[:space:]].*/\1/p' CMakeLists.txt)
+          if [[ ! $RELEASE_TAG =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ || $RELEASE_TAG != "v$version" ]]; then
+            echo 'The release tag must be vMAJOR.MINOR.PATCH and match the CMake project version.' >&2
+            exit 1
+          fi
+          expected=$(git rev-parse --verify "$GITHUB_SHA^{commit}")
+          if [[ $(git rev-parse HEAD) != "$expected" ]]; then
+            echo 'Release checkout differs from the commit that passed both builds.' >&2
+            exit 1
+          fi
+
+          repo_path="repos/$GITHUB_REPOSITORY"
+          refs=$(gh api "$repo_path/git/matching-refs/tags/$RELEASE_TAG")
+          object=$(jq -c --arg ref "refs/tags/$RELEASE_TAG" 'first(.[] | select(.ref == $ref) | .object) // null' <<<"$refs")
+          tag_options=(--verify-tag)
+          if [[ $object == null ]]; then
+            if [[ $GITHUB_EVENT_NAME != workflow_dispatch ]]; then
+              echo 'The pushed version tag is missing.' >&2
+              exit 1
+            fi
+            tag_options=(--target "$expected")
+          else
+            while [[ $(jq -r '.type' <<<"$object") == tag ]]; do
+              oid=$(jq -r '.sha' <<<"$object")
+              object=$(gh api "$repo_path/git/tags/$oid" --jq '.object')
+            done
+            if [[ $(jq -r '.type' <<<"$object") != commit || $(jq -r '.sha' <<<"$object") != "$expected" ]]; then
+              echo 'The existing version tag points to a different commit.' >&2
+              exit 1
+            fi
+          fi
+
+          assets=(release-assets/match3-strict-{linux-x64,windows-x64,source}.zip)
+          git archive --format=zip --prefix=match3-strict/ --output="${assets[2]}" "$expected"
+          for asset in "${assets[@]}"; do
+            test -s "$asset"
+          done
+
+          if release=$(gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft,assets,targetCommitish); then
+            if [[ $object == null ]] && ! jq -e --arg commit "$expected" '.isDraft and .targetCommitish == $commit' <<<"$release" >/dev/null; then
+              echo 'The tag is missing and the existing release is not a draft for the tested commit.' >&2
+              exit 1
+            fi
+            for asset in "${assets[@]}"; do
+              if ! jq -e --arg name "${asset##*/}" 'any(.assets[]; .name == $name)' <<<"$release" >/dev/null; then
+                gh release upload "$RELEASE_TAG" "$asset" --repo "$GITHUB_REPOSITORY"
+              fi
+            done
+            if jq -e '.isDraft' <<<"$release" >/dev/null; then
+              gh release edit "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --draft=false "${tag_options[@]}"
+            fi
+          else
+            gh release create "$RELEASE_TAG" "${assets[@]}" --repo "$GITHUB_REPOSITORY" "${tag_options[@]}" --generate-notes
+          fi
