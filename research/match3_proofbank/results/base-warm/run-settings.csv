@@ -1,0 +1,13 @@
+setting,value
+bank,base
+cache,warm
+arms,pair
+board_count,200
+episodes_per_agent_arm,64
+workers,8
+gameplay_seed,202611249
+base_discovery_seed,202611245
+profile_seed,202611251
+audit_seed,202611252
+extra_solver_limit,0
+paired_arm_order,alternated_by_board_seed

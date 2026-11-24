@@ -1,0 +1,5 @@
+stratum,goal,moves,first_seed,certified_quota,candidate_limit,rows,columns,colors,max_refill,max_candidates,max_refill_nodes,max_states,cascade_limit,board_generator
+g6-m3,6,3,1000000,25,1000,8,8,5,12,256000,720000,6000,9,historical_random_stable_layout_0
+g10-m4,10,4,2000000,25,1000,8,8,5,12,256000,720000,6000,9,historical_random_stable_layout_0
+g8-m2,8,2,3000000,25,1000,8,8,5,12,256000,720000,6000,9,historical_random_stable_layout_0
+g10-m3,10,3,4000000,25,1000,8,8,5,12,256000,720000,6000,9,historical_random_stable_layout_0

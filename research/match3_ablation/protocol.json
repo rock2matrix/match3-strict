@@ -1,0 +1,33 @@
+{
+  "experiment": "cascade-difficulty-ablation-v1",
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "frozen_v1_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "calibration_n": 100,
+  "exploratory_n": 200,
+  "confirmation_n": 200,
+  "strata": ["g6-m3", "g10-m4", "g8-m2", "g10-m3"],
+  "agents": ["Random", "Greedy", "Objective", "Lookahead"],
+  "variants": {
+    "V1": {"components": ["exact_early", "exact_challenge", "exact_chain"], "cuts": [0.554, 0.651]},
+    "V2": {"components": ["exact_early", "exact_challenge", "exact_extra_tiles_capped6"], "calibration_cuts_after_sorted_positions": [33, 66]},
+    "V3": {"components": ["exact_early", "exact_challenge"], "calibration_cuts_after_sorted_positions": [33, 66]}
+  },
+  "sensitivity_variants": {
+    "V2_cap9": ["exact_early", "exact_challenge", "exact_extra_tiles_capped9"],
+    "V2_mean": ["exact_early", "exact_challenge", "mean_extra_tiles_over_mean_plus_3"]
+  },
+  "scoring": {
+    "reference_agent": "Random",
+    "probability_round_decimals_for_ranks": 12,
+    "value_clip": "Across all used swaps, K sums all cleared tiles after each swap's first wave. V2 uses E[min(K/6,1)] over complete certified episodes."
+  },
+  "selection": {
+    "primary": "macro Spearman across strata x non-Random agents x each of exact_early and exact_challenge; each nonconstant endpoint cell equal weight",
+    "exploratory_rule": "Lock best alternative if advantage vs V1 is at least 0.02. If neither improves by 0.02, keep V1 as default and lock the better alternative as challenger. Break exact alternative ties in favor of V3.",
+    "practical_margin_rho": 0.02,
+    "confirmation_rule": "Keep challenger frozen. Prefer a replacement for superiority if its paired 95% lower bound against V1 is greater than zero and point improvement is at least 0.02. V3 also qualifies for simplification if its 95% lower bound is above -0.02. Evidence for retaining the chain feature over omission requires the V3-vs-V1 upper bound below -0.02. All other cases retain V1 and are inconclusive about a practically meaningful advantage.",
+    "bootstrap": {"replicates": 2500, "seed": 202611241, "unit": "paired boards resampled within recipe", "ci_level": 0.95},
+    "exploratory_previous_read": true
+  },
+  "confirmation": {"seed_starts_in_stratum_order": [1600000, 2600000, 3600000, 4600000], "certified_per_stratum": 50, "candidate_cap_per_stratum": 4000}
+}

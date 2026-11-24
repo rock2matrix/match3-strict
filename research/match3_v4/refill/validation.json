@@ -1,0 +1,146 @@
+{
+  "boards": 200,
+  "archived_max_abs_difference": {
+    "early": 0.0,
+    "challenge": 0.0,
+    "chain": 0.0,
+    "mean_productive_extra_tiles": 9.992007221626409e-16
+  },
+  "paired_exact_vs_archive_max_abs_difference": {
+    "Random": {
+      "early": 9.992007221626409e-16,
+      "challenge": 9.992007221626409e-16,
+      "chain": 9.992007221626409e-16,
+      "mean_productive_extra_tiles": 1.021405182655144e-14
+    },
+    "Greedy": {
+      "early": 0.0,
+      "challenge": 0.0,
+      "chain": 0.0,
+      "mean_productive_extra_tiles": 9.992007221626409e-16
+    },
+    "Objective": {
+      "early": 0.0,
+      "challenge": 0.0,
+      "chain": 0.0,
+      "mean_productive_extra_tiles": 0.0
+    },
+    "Lookahead": {
+      "early": 0.0,
+      "challenge": 0.0,
+      "chain": 0.0,
+      "mean_productive_extra_tiles": 0.0
+    }
+  },
+  "paired_exact_cells_differing_from_archive": {},
+  "witness_mean_abs_sampling_error": {
+    "Random": {
+      "early": 0.03184980129832793,
+      "challenge": 0.04792630071209838,
+      "chain": 0.03406252340306533,
+      "mean_productive_extra_tiles": 0.1597607735166514
+    },
+    "Greedy": {
+      "early": 0.007221041539512207,
+      "challenge": 0.018676064272007922,
+      "chain": 0.01656064524081505,
+      "mean_productive_extra_tiles": 0.043920880048773064
+    },
+    "Objective": {
+      "early": 0.0,
+      "challenge": 0.0,
+      "chain": 0.0,
+      "mean_productive_extra_tiles": 0.0
+    },
+    "Lookahead": {
+      "early": 0.0,
+      "challenge": 0.0,
+      "chain": 0.0,
+      "mean_productive_extra_tiles": 0.0
+    }
+  },
+  "controller_counts": {
+    "Witness": {
+      "goal": 6800,
+      "moves": 2400,
+      "episodes": 51200,
+      "wins": 51200,
+      "early": 43784,
+      "challenge": 30052,
+      "chain": 40729,
+      "productive_extra": 158002,
+      "clears": 748735,
+      "total_turns": 76922,
+      "executed_witness": 76922,
+      "executed_proposal": 0,
+      "first_accepted": 0,
+      "witness_fallbacks": 0,
+      "proposal_attempts": 0,
+      "proposal_safe": 0,
+      "proposal_unsafe": 0,
+      "proposal_unknown": 0,
+      "proposal_cap": 0,
+      "proposal_depth": 0,
+      "proposal_same_witness": 0,
+      "solver_calls": 0,
+      "cache_hits": 0,
+      "extra_waves": 70760,
+      "max_waves": 2448
+    },
+    "ConditionalRandom": {
+      "goal": 6800,
+      "moves": 2400,
+      "episodes": 51200,
+      "wins": 51200,
+      "early": 45919,
+      "challenge": 31384,
+      "chain": 45448,
+      "productive_extra": 170834,
+      "clears": 722937,
+      "total_turns": 72603,
+      "executed_witness": 356,
+      "executed_proposal": 72247,
+      "first_accepted": 69183,
+      "witness_fallbacks": 356,
+      "proposal_attempts": 80083,
+      "proposal_safe": 72247,
+      "proposal_unsafe": 7189,
+      "proposal_unknown": 647,
+      "proposal_cap": 256,
+      "proposal_depth": 38,
+      "proposal_same_witness": 3514,
+      "solver_calls": 16408,
+      "cache_hits": 9416,
+      "extra_waves": 98532,
+      "max_waves": 4822
+    },
+    "MinIntervention": {
+      "goal": 6800,
+      "moves": 2400,
+      "episodes": 51200,
+      "wins": 51200,
+      "early": 45752,
+      "challenge": 31407,
+      "chain": 45416,
+      "productive_extra": 169679,
+      "clears": 723659,
+      "total_turns": 72870,
+      "executed_witness": 3494,
+      "executed_proposal": 69376,
+      "first_accepted": 69376,
+      "witness_fallbacks": 3494,
+      "proposal_attempts": 72870,
+      "proposal_safe": 69376,
+      "proposal_unsafe": 3070,
+      "proposal_unknown": 424,
+      "proposal_cap": 215,
+      "proposal_depth": 38,
+      "proposal_same_witness": 2972,
+      "solver_calls": 314,
+      "cache_hits": 19745,
+      "extra_waves": 97905,
+      "max_waves": 4809
+    }
+  },
+  "pilot_matches_full": true
+}

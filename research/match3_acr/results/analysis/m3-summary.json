@@ -1,0 +1,629 @@
+{
+  "cold": {
+    "controllers": {
+      "Witness": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 43770,
+        "challenge": 29918,
+        "chain": 40686,
+        "total_turns": 76959,
+        "executed_witness": 76959,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "candidate_checks": 0,
+        "refill_nodes": 0,
+        "states": 0,
+        "cache_hits": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.0,
+        "draws_per_turn": 0.0,
+        "natural_executed_per_turn": 0.0,
+        "early_rate": 0.8548828125,
+        "challenge_rate": 0.5843359375,
+        "chain_rate": 0.7946484375,
+        "thread_cpu": {
+          "mean_us": 0.693071232734313,
+          "p50_us": 0.631,
+          "p95_us": 0.852,
+          "p99_us": 1.032,
+          "max_us": 33.733000000000004
+        },
+        "wall": {
+          "mean_us": 1.333566405488637,
+          "p50_us": 1.202,
+          "p95_us": 1.613,
+          "p99_us": 1.944,
+          "max_us": 87.543
+        },
+        "planned_k": {
+          "0": 76959
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.9573640211620104,
+          "kl": 8.890515339652065,
+          "fallback": 1.0
+        }
+      },
+      "Fixed1": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 45796,
+        "challenge": 31200,
+        "chain": 44944,
+        "total_turns": 71925,
+        "executed_witness": 15580,
+        "executed_proposal": 56345,
+        "witness_fallbacks": 15580,
+        "proposal_attempts": 71925,
+        "proposal_safe": 56345,
+        "proposal_unsafe": 2627,
+        "proposal_unknown": 12953,
+        "candidate_checks": 71925,
+        "refill_nodes": 704153,
+        "states": 71669,
+        "cache_hits": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.21661452902328815,
+        "draws_per_turn": 1.0,
+        "natural_executed_per_turn": 0.7833854709767119,
+        "early_rate": 0.894453125,
+        "challenge_rate": 0.609375,
+        "chain_rate": 0.8778125,
+        "thread_cpu": {
+          "mean_us": 7.049246701425096,
+          "p50_us": 6.2620000000000005,
+          "p95_us": 12.623000000000001,
+          "p99_us": 18.244,
+          "max_us": 388.144
+        },
+        "wall": {
+          "mean_us": 7.7151163434132775,
+          "p50_us": 6.863,
+          "p95_us": 13.425,
+          "p99_us": 19.878,
+          "max_us": 388.925
+        },
+        "planned_k": {
+          "1": 71925
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3009039687951149,
+          "kl": 2.777123602477716,
+          "fallback": 0.3009039687951149
+        }
+      },
+      "Fixed3": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47078,
+        "challenge": 30526,
+        "chain": 45884,
+        "total_turns": 68774,
+        "executed_witness": 7023,
+        "executed_proposal": 61751,
+        "witness_fallbacks": 7023,
+        "proposal_attempts": 94010,
+        "proposal_safe": 61752,
+        "proposal_unsafe": 5706,
+        "proposal_unknown": 26552,
+        "candidate_checks": 94010,
+        "refill_nodes": 844581,
+        "states": 93717,
+        "cache_hits": 0,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.10211707912874052,
+        "draws_per_turn": 1.3669409951435136,
+        "natural_executed_per_turn": 0.8978829208712595,
+        "early_rate": 0.9194921875,
+        "challenge_rate": 0.5962109375,
+        "chain_rate": 0.896171875,
+        "thread_cpu": {
+          "mean_us": 8.720018088231019,
+          "p50_us": 7.5840000000000005,
+          "p95_us": 16.882,
+          "p99_us": 22.492,
+          "max_us": 5623.327
+        },
+        "wall": {
+          "mean_us": 9.389553435891472,
+          "p50_us": 8.185,
+          "p95_us": 17.733,
+          "p99_us": 24.255,
+          "max_us": 5624.159000000001
+        },
+        "planned_k": {
+          "3": 68774
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3123837401196187,
+          "kl": 0.9483935025294946,
+          "fallback": 0.07718427869643059
+        }
+      },
+      "Fixed6": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47601,
+        "challenge": 30228,
+        "chain": 46286,
+        "total_turns": 67417,
+        "executed_witness": 3478,
+        "executed_proposal": 63939,
+        "witness_fallbacks": 3478,
+        "proposal_attempts": 109250,
+        "proposal_safe": 63940,
+        "proposal_unsafe": 8365,
+        "proposal_unknown": 36945,
+        "candidate_checks": 109250,
+        "refill_nodes": 927147,
+        "states": 108951,
+        "cache_hits": 0,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.05158936173368735,
+        "draws_per_turn": 1.6205111470400642,
+        "natural_executed_per_turn": 0.9484106382663127,
+        "early_rate": 0.92970703125,
+        "challenge_rate": 0.590390625,
+        "chain_rate": 0.9040234375,
+        "thread_cpu": {
+          "mean_us": 9.827585282643843,
+          "p50_us": 7.634,
+          "p95_us": 23.313,
+          "p99_us": 34.414,
+          "max_us": 3916.708
+        },
+        "wall": {
+          "mean_us": 10.497002699615825,
+          "p50_us": 8.265,
+          "p95_us": 24.145,
+          "p99_us": 35.516,
+          "max_us": 3917.53
+        },
+        "planned_k": {
+          "6": 67417
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.31770994453279405,
+          "kl": 0.5198293764874582,
+          "fallback": 0.014761038635059313
+        }
+      },
+      "Adaptive": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47438,
+        "challenge": 30350,
+        "chain": 46136,
+        "total_turns": 67874,
+        "executed_witness": 4703,
+        "executed_proposal": 63171,
+        "witness_fallbacks": 4703,
+        "proposal_attempts": 104164,
+        "proposal_safe": 63171,
+        "proposal_unsafe": 8190,
+        "proposal_unknown": 32803,
+        "candidate_checks": 104164,
+        "refill_nodes": 899131,
+        "states": 103869,
+        "cache_hits": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.06929015528773905,
+        "draws_per_turn": 1.5346671774169784,
+        "natural_executed_per_turn": 0.9307098447122609,
+        "early_rate": 0.9265234375,
+        "challenge_rate": 0.5927734375,
+        "chain_rate": 0.90109375,
+        "thread_cpu": {
+          "mean_us": 9.399389987329464,
+          "p50_us": 7.605,
+          "p95_us": 21.2,
+          "p99_us": 31.368000000000002,
+          "max_us": 346.776
+        },
+        "wall": {
+          "mean_us": 10.072313168518138,
+          "p50_us": 8.226,
+          "p95_us": 22.091,
+          "p99_us": 32.731,
+          "max_us": 347.608
+        },
+        "planned_k": {
+          "1": 13099,
+          "2": 9563,
+          "3": 5586,
+          "4": 13031,
+          "5": 10738,
+          "6": 15857
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3157756897513516,
+          "kl": 0.5621594650398788,
+          "fallback": 0.023158509580726003
+        }
+      }
+    },
+    "paired_acr_vs_fixed6": {
+      "cpu_saving_fraction": {
+        "point": 0.04151364602533336,
+        "ci95": [
+          0.027359444179498538,
+          0.057443477785467545
+        ]
+      },
+      "fallback_delta": {
+        "point": 0.01634775120835008,
+        "ci95": [
+          0.013998072558329936,
+          0.018818593357961634
+        ]
+      }
+    },
+    "engineering_gates": {
+      "strict": true,
+      "fallback": true,
+      "cpu_saving": false,
+      "cpu_p95": true
+    },
+    "frozen_witness_drift": {
+      "Witness": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.9100245344835582,
+        "tier_changes": 50,
+        "two_tier_changes": 0
+      },
+      "Fixed1": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.7472272673455327,
+        "tier_changes": 115,
+        "two_tier_changes": 13
+      },
+      "Fixed3": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6667700367426808,
+        "tier_changes": 125,
+        "two_tier_changes": 22
+      },
+      "Fixed6": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6442690573934583,
+        "tier_changes": 125,
+        "two_tier_changes": 25
+      },
+      "Adaptive": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6590064604767805,
+        "tier_changes": 124,
+        "two_tier_changes": 25
+      }
+    }
+  },
+  "warm": {
+    "controllers": {
+      "Witness": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 43770,
+        "challenge": 29918,
+        "chain": 40686,
+        "total_turns": 76959,
+        "executed_witness": 76959,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "candidate_checks": 0,
+        "refill_nodes": 0,
+        "states": 0,
+        "cache_hits": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.0,
+        "draws_per_turn": 0.0,
+        "natural_executed_per_turn": 0.0,
+        "early_rate": 0.8548828125,
+        "challenge_rate": 0.5843359375,
+        "chain_rate": 0.7946484375,
+        "thread_cpu": {
+          "mean_us": 0.6829001546277889,
+          "p50_us": 0.621,
+          "p95_us": 0.851,
+          "p99_us": 1.042,
+          "max_us": 47.769
+        },
+        "wall": {
+          "mean_us": 1.4258000363830092,
+          "p50_us": 1.182,
+          "p95_us": 1.603,
+          "p99_us": 1.984,
+          "max_us": 4464.222
+        },
+        "planned_k": {
+          "0": 76959
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.9573640211620104,
+          "kl": 8.890515339652065,
+          "fallback": 1.0
+        }
+      },
+      "Fixed1": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 45796,
+        "challenge": 31200,
+        "chain": 44944,
+        "total_turns": 71925,
+        "executed_witness": 15580,
+        "executed_proposal": 56345,
+        "witness_fallbacks": 15580,
+        "proposal_attempts": 71925,
+        "proposal_safe": 56345,
+        "proposal_unsafe": 2627,
+        "proposal_unknown": 12953,
+        "candidate_checks": 71925,
+        "refill_nodes": 704153,
+        "states": 71669,
+        "cache_hits": 5840,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.21661452902328815,
+        "draws_per_turn": 1.0,
+        "natural_executed_per_turn": 0.7833854709767119,
+        "early_rate": 0.894453125,
+        "challenge_rate": 0.609375,
+        "chain_rate": 0.8778125,
+        "thread_cpu": {
+          "mean_us": 6.880096211331248,
+          "p50_us": 6.121,
+          "p95_us": 12.463000000000001,
+          "p99_us": 17.763,
+          "max_us": 264.974
+        },
+        "wall": {
+          "mean_us": 7.684920667361835,
+          "p50_us": 6.722,
+          "p95_us": 13.254,
+          "p99_us": 19.566,
+          "max_us": 5775.6410000000005
+        },
+        "planned_k": {
+          "1": 71925
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3009039687951149,
+          "kl": 2.777123602477716,
+          "fallback": 0.3009039687951149
+        }
+      },
+      "Fixed3": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47078,
+        "challenge": 30527,
+        "chain": 45884,
+        "total_turns": 68774,
+        "executed_witness": 7022,
+        "executed_proposal": 61752,
+        "witness_fallbacks": 7022,
+        "proposal_attempts": 94009,
+        "proposal_safe": 61752,
+        "proposal_unsafe": 5706,
+        "proposal_unknown": 26551,
+        "candidate_checks": 94009,
+        "refill_nodes": 844578,
+        "states": 93716,
+        "cache_hits": 13928,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.10210253875010905,
+        "draws_per_turn": 1.366926454764882,
+        "natural_executed_per_turn": 0.8978974612498909,
+        "early_rate": 0.9194921875,
+        "challenge_rate": 0.59623046875,
+        "chain_rate": 0.896171875,
+        "thread_cpu": {
+          "mean_us": 8.520767179457353,
+          "p50_us": 7.474,
+          "p95_us": 16.2,
+          "p99_us": 22.332,
+          "max_us": 2895.685
+        },
+        "wall": {
+          "mean_us": 9.21716690900631,
+          "p50_us": 8.085,
+          "p95_us": 17.021,
+          "p99_us": 24.155,
+          "max_us": 2896.636
+        },
+        "planned_k": {
+          "3": 68774
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3123837401196187,
+          "kl": 0.9483935025294946,
+          "fallback": 0.07718427869643059
+        }
+      },
+      "Fixed6": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47601,
+        "challenge": 30228,
+        "chain": 46286,
+        "total_turns": 67417,
+        "executed_witness": 3477,
+        "executed_proposal": 63940,
+        "witness_fallbacks": 3477,
+        "proposal_attempts": 109250,
+        "proposal_safe": 63940,
+        "proposal_unsafe": 8365,
+        "proposal_unknown": 36945,
+        "candidate_checks": 109250,
+        "refill_nodes": 927147,
+        "states": 108951,
+        "cache_hits": 21580,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.051574528679709866,
+        "draws_per_turn": 1.6205111470400642,
+        "natural_executed_per_turn": 0.9484254713202901,
+        "early_rate": 0.92970703125,
+        "challenge_rate": 0.590390625,
+        "chain_rate": 0.9040234375,
+        "thread_cpu": {
+          "mean_us": 9.454161220463682,
+          "p50_us": 7.5040000000000004,
+          "p95_us": 21.951,
+          "p99_us": 32.2,
+          "max_us": 1048.575
+        },
+        "wall": {
+          "mean_us": 10.368227494548853,
+          "p50_us": 8.125,
+          "p95_us": 22.853,
+          "p99_us": 33.983000000000004,
+          "max_us": 6400.435
+        },
+        "planned_k": {
+          "6": 67417
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.31770994453279405,
+          "kl": 0.5198293764874582,
+          "fallback": 0.014761038635059313
+        }
+      },
+      "Adaptive": {
+        "episodes": 51200,
+        "wins": 51200,
+        "early": 47438,
+        "challenge": 30350,
+        "chain": 46136,
+        "total_turns": 67874,
+        "executed_witness": 4703,
+        "executed_proposal": 63171,
+        "witness_fallbacks": 4703,
+        "proposal_attempts": 104164,
+        "proposal_safe": 63171,
+        "proposal_unsafe": 8190,
+        "proposal_unknown": 32803,
+        "candidate_checks": 104164,
+        "refill_nodes": 899131,
+        "states": 103869,
+        "cache_hits": 19254,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "fallback_rate": 0.06929015528773905,
+        "draws_per_turn": 1.5346671774169784,
+        "natural_executed_per_turn": 0.9307098447122609,
+        "early_rate": 0.9265234375,
+        "challenge_rate": 0.5927734375,
+        "chain_rate": 0.90109375,
+        "thread_cpu": {
+          "mean_us": 9.170455667855144,
+          "p50_us": 7.5040000000000004,
+          "p95_us": 20.138,
+          "p99_us": 28.994,
+          "max_us": 1604.229
+        },
+        "wall": {
+          "mean_us": 10.001962504051626,
+          "p50_us": 8.125,
+          "p95_us": 21.07,
+          "p99_us": 30.887,
+          "max_us": 5209.3150000000005
+        },
+        "planned_k": {
+          "1": 13099,
+          "2": 9563,
+          "3": 5586,
+          "4": 13031,
+          "5": 10738,
+          "6": 15857
+        },
+        "group_forecasted_trajectory_law": {
+          "tv": 0.3157756897513516,
+          "kl": 0.5621594650398788,
+          "fallback": 0.023158509580726003
+        }
+      }
+    },
+    "paired_acr_vs_fixed6": {
+      "cpu_saving_fraction": {
+        "point": 0.02841282270274781,
+        "ci95": [
+          0.018059929863319613,
+          0.03852099562069866
+        ]
+      },
+      "fallback_delta": {
+        "point": 0.016364362504031144,
+        "ci95": [
+          0.013998072558329936,
+          0.01883931803522625
+        ]
+      }
+    },
+    "engineering_gates": {
+      "strict": true,
+      "fallback": true,
+      "cpu_saving": false,
+      "cpu_p95": true
+    },
+    "frozen_witness_drift": {
+      "Witness": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.9100245344835582,
+        "tier_changes": 50,
+        "two_tier_changes": 0
+      },
+      "Fixed1": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.7472272673455327,
+        "tier_changes": 115,
+        "two_tier_changes": 13
+      },
+      "Fixed3": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6667700367426808,
+        "tier_changes": 125,
+        "two_tier_changes": 22
+      },
+      "Fixed6": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6442690573934583,
+        "tier_changes": 125,
+        "two_tier_changes": 25
+      },
+      "Adaptive": {
+        "n": 200,
+        "macro_rank_rho_vs_witness": 0.6590064604767805,
+        "tier_changes": 124,
+        "two_tier_changes": 25
+      }
+    }
+  },
+  "adoption_screen_supported_both_cache_modes": false
+}

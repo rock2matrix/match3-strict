@@ -1,0 +1,194 @@
+{
+  "candidates": 1985,
+  "verified": 200,
+  "strata": {
+    "g6-m3": {
+      "candidates": 52,
+      "verified": 50,
+      "verdicts": {
+        "WIN_CERTIFIED": 50,
+        "UNKNOWN": 2
+      },
+      "tiers": {
+        "hard": 10,
+        "normal": 24,
+        "easy": 16
+      },
+      "solver_plus_verify_ms": 364.563849
+    },
+    "g10-m4": {
+      "candidates": 111,
+      "verified": 50,
+      "verdicts": {
+        "UNKNOWN": 60,
+        "WIN_CERTIFIED": 50,
+        "FAIL_CERTIFIED": 1
+      },
+      "tiers": {
+        "hard": 18,
+        "normal": 15,
+        "easy": 17
+      },
+      "solver_plus_verify_ms": 16686.0779
+    },
+    "g8-m2": {
+      "candidates": 1304,
+      "verified": 50,
+      "verdicts": {
+        "FAIL_CERTIFIED": 1254,
+        "WIN_CERTIFIED": 50
+      },
+      "tiers": {
+        "hard": 19,
+        "normal": 18,
+        "easy": 13
+      },
+      "solver_plus_verify_ms": 628.386815
+    },
+    "g10-m3": {
+      "candidates": 518,
+      "verified": 50,
+      "verdicts": {
+        "FAIL_CERTIFIED": 457,
+        "WIN_CERTIFIED": 50,
+        "UNKNOWN": 11
+      },
+      "tiers": {
+        "hard": 8,
+        "normal": 18,
+        "easy": 24
+      },
+      "solver_plus_verify_ms": 6943.48632
+    }
+  },
+  "tiers": {
+    "hard": {
+      "count": 55,
+      "mean_ease": 0.4856247539488691,
+      "mean_difficulty": 51.43752460511309,
+      "agents": {
+        "Random": {
+          "exact_early": 0.49654081922420185,
+          "exact_challenge": 0.30901119919813275,
+          "exact_chain": 0.6513222434242727
+        },
+        "Greedy": {
+          "exact_early": 0.7094020187533818,
+          "exact_challenge": 0.5188186839733836,
+          "exact_chain": 0.45800261765559636
+        },
+        "Objective": {
+          "exact_early": 0.9272727272727272,
+          "exact_challenge": 0.36363636363636365,
+          "exact_chain": 0.8909090909090909
+        },
+        "Lookahead": {
+          "exact_early": 0.9454545454545454,
+          "exact_challenge": 0.7090909090909091,
+          "exact_chain": 0.9636363636363636
+        }
+      },
+      "near_cutoff_1pt": 8
+    },
+    "normal": {
+      "count": 75,
+      "mean_ease": 0.6093813095254977,
+      "mean_difficulty": 39.06186904745022,
+      "agents": {
+        "Random": {
+          "exact_early": 0.6944506060086266,
+          "exact_challenge": 0.41430320879124,
+          "exact_chain": 0.7193901137766266
+        },
+        "Greedy": {
+          "exact_early": 0.8741678004535066,
+          "exact_challenge": 0.54027402416648,
+          "exact_chain": 0.5059801383399334
+        },
+        "Objective": {
+          "exact_early": 1.0,
+          "exact_challenge": 0.47333333333333333,
+          "exact_chain": 0.96
+        },
+        "Lookahead": {
+          "exact_early": 0.9866666666666667,
+          "exact_challenge": 0.8,
+          "exact_chain": 1.0
+        }
+      },
+      "near_cutoff_1pt": 16
+    },
+    "easy": {
+      "count": 70,
+      "mean_ease": 0.7058859976630952,
+      "mean_difficulty": 29.411400233690475,
+      "agents": {
+        "Random": {
+          "exact_early": 0.7752169118947285,
+          "exact_challenge": 0.5170349815874,
+          "exact_chain": 0.8254060995071572
+        },
+        "Greedy": {
+          "exact_early": 0.9164937774994572,
+          "exact_challenge": 0.6331072749440572,
+          "exact_chain": 0.6363159626863143
+        },
+        "Objective": {
+          "exact_early": 1.0,
+          "exact_challenge": 0.5071428571428571,
+          "exact_chain": 0.9285714285714286
+        },
+        "Lookahead": {
+          "exact_early": 1.0,
+          "exact_challenge": 0.9714285714285714,
+          "exact_chain": 1.0
+        }
+      },
+      "near_cutoff_1pt": 8
+    }
+  },
+  "sensitivity": {
+    "weight_40_40_20": {
+      "same": 143,
+      "two_tiers_off": 0,
+      "transitions": {
+        "easy->easy": 55,
+        "easy->normal": 15,
+        "hard->hard": 47,
+        "hard->normal": 8,
+        "normal->easy": 21,
+        "normal->hard": 13,
+        "normal->normal": 41
+      }
+    },
+    "surplus_plus_1": {
+      "same": 122,
+      "two_tiers_off": 5,
+      "transitions": {
+        "easy->easy": 53,
+        "easy->hard": 4,
+        "easy->normal": 13,
+        "hard->easy": 1,
+        "hard->hard": 37,
+        "hard->normal": 17,
+        "normal->easy": 19,
+        "normal->hard": 24,
+        "normal->normal": 32
+      }
+    },
+    "surplus_plus_6": {
+      "same": 173,
+      "two_tiers_off": 0,
+      "transitions": {
+        "easy->easy": 63,
+        "easy->normal": 7,
+        "hard->hard": 53,
+        "hard->normal": 2,
+        "normal->easy": 8,
+        "normal->hard": 10,
+        "normal->normal": 57
+      }
+    }
+  },
+  "standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560"
+}

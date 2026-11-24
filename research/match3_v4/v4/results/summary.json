@@ -1,0 +1,244 @@
+{
+  "plan_sha256": "b922f1e60ccec58a767652b469adef5193c7c6adb1efd67320288ff35295d901",
+  "inputs_sha256": {
+    "calibration_candidates": "58b7c04fe70adc312021db01f5f353ed399d176589627ff92c6590031a795648",
+    "calibration_policies": "fe230afb14d4b3fee3dbc6381dd833285648b5888fa583d61eb333cab5942c9d",
+    "calibration_features": "e3d007aa0b123d02ce387b7a91301241c666feb896c913707b77a4ac7c2033f5",
+    "comparison_candidates": "ab5dd21104b96dadfea03ce3b3d8bb277fd27abb2285816876eb2c1717d95f35",
+    "comparison_features": "07a641885d11292b2c18a9b97f45f3001fe1f7c237b9c8d62f360252974cc8a0"
+  },
+  "v1_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "v3_lock_sha256": "8bf9340abcadebf19ff8a9c7be27a664e7d691f05199c9e7d4725ef68f5ffb51",
+  "fitted": {
+    "V1": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "exact_chain"
+      ],
+      "cuts": [
+        0.554,
+        0.651
+      ]
+    },
+    "V3": {
+      "components": [
+        "exact_early",
+        "exact_challenge"
+      ],
+      "cuts": [
+        0.47383498800275003,
+        0.60792331950975
+      ]
+    },
+    "V4": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "productive_rate"
+      ],
+      "cuts": [
+        0.40634669047144933,
+        0.49823903695370336
+      ]
+    }
+  },
+  "calibration_tiers": {
+    "V1": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V3": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V4": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    }
+  },
+  "comparison_certificates_replayed": 200,
+  "diagnostics": {
+    "productive_factor_mean_random": 0.27052317231523165,
+    "partial_rank_macro": -0.1106533398436934,
+    "partial_rank_nonconstant_cells": 17
+  },
+  "models": {
+    "V1": {
+      "macro_rho": 0.17854583779526412,
+      "primary_cells": 17,
+      "by_recipe": {
+        "g6-m3": 0.18166079508265573,
+        "g10-m4": 0.19512386573755305,
+        "g8-m2": 0.15285256636214786,
+        "g10-m3": 0.19817149903710593
+      },
+      "by_agent": {
+        "Greedy": 0.1833652729214399,
+        "Lookahead": 0.20116327501823114,
+        "Objective": 0.14918119139565103
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.1638743001576135,
+        "exact_early": 0.21375752812562565
+      },
+      "coverage": {
+        "g6-m3": {
+          "hard": 12,
+          "normal": 24,
+          "easy": 14
+        },
+        "g10-m4": {
+          "hard": 13,
+          "normal": 19,
+          "easy": 18
+        },
+        "g8-m2": {
+          "hard": 27,
+          "normal": 18,
+          "easy": 5
+        },
+        "g10-m3": {
+          "hard": 3,
+          "normal": 20,
+          "easy": 27
+        }
+      },
+      "primary_cells_with_nondecreasing_tier_means": 13,
+      "eligible_primary_cells_for_tier_order": 17,
+      "same_tier_as_v1": 200,
+      "two_tiers_from_v1": 0
+    },
+    "V3": {
+      "macro_rho": 0.19018424642636314,
+      "primary_cells": 17,
+      "by_recipe": {
+        "g6-m3": 0.18826435439034095,
+        "g10-m4": 0.2595087959152008,
+        "g8-m2": 0.10609770123603046,
+        "g10-m3": 0.2484294337500411
+      },
+      "by_agent": {
+        "Greedy": 0.21292910270213128,
+        "Lookahead": 0.2043504077818259,
+        "Objective": 0.14417528628482496
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.18190745853985926,
+        "exact_early": 0.2100485373539724
+      },
+      "coverage": {
+        "g6-m3": {
+          "hard": 0,
+          "normal": 3,
+          "easy": 47
+        },
+        "g10-m4": {
+          "hard": 4,
+          "normal": 24,
+          "easy": 22
+        },
+        "g8-m2": {
+          "hard": 45,
+          "normal": 5,
+          "easy": 0
+        },
+        "g10-m3": {
+          "hard": 13,
+          "normal": 25,
+          "easy": 12
+        }
+      },
+      "primary_cells_with_nondecreasing_tier_means": 6,
+      "eligible_primary_cells_for_tier_order": 8,
+      "same_tier_as_v1": 103,
+      "two_tiers_from_v1": 9
+    },
+    "V4": {
+      "macro_rho": 0.16284165400970713,
+      "primary_cells": 17,
+      "by_recipe": {
+        "g6-m3": 0.15248916446301103,
+        "g10-m4": 0.2132512751858607,
+        "g8-m2": 0.10258724866187183,
+        "g10-m3": 0.2105780080153285
+      },
+      "by_agent": {
+        "Greedy": 0.16876765921625558,
+        "Lookahead": 0.18188097787055107,
+        "Objective": 0.1355059228596953
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.15410173509294336,
+        "exact_early": 0.18381745940994007
+      },
+      "coverage": {
+        "g6-m3": {
+          "hard": 2,
+          "normal": 26,
+          "easy": 22
+        },
+        "g10-m4": {
+          "hard": 12,
+          "normal": 21,
+          "easy": 17
+        },
+        "g8-m2": {
+          "hard": 35,
+          "normal": 14,
+          "easy": 1
+        },
+        "g10-m3": {
+          "hard": 10,
+          "normal": 20,
+          "easy": 20
+        }
+      },
+      "primary_cells_with_nondecreasing_tier_means": 10,
+      "eligible_primary_cells_for_tier_order": 17,
+      "same_tier_as_v1": 150,
+      "two_tiers_from_v1": 0
+    }
+  },
+  "comparisons": {
+    "V3_minus_V1": {
+      "delta": 0.011638408631099023,
+      "ci95": [
+        -0.01921487695705732,
+        0.042034124198072745
+      ]
+    },
+    "V4_minus_V1": {
+      "delta": -0.01570418378555699,
+      "ci95": [
+        -0.039306862929154106,
+        0.006087359570363093
+      ]
+    },
+    "V4_minus_V3": {
+      "delta": -0.027342592416656014,
+      "ci95": [
+        -0.049161094094972775,
+        -0.006826870252087663
+      ]
+    }
+  },
+  "v4_recipe_deltas_vs_v1": {
+    "g6-m3": -0.0291716306196447,
+    "g10-m4": 0.018127409448307652,
+    "g8-m2": -0.050265317700276035,
+    "g10-m3": 0.012406508978222569
+  },
+  "v4_gates": {
+    "improvement": false,
+    "paired_interval_lower_above_zero": false,
+    "recipe_degradation": false,
+    "all_three_tiers_per_recipe": true,
+    "all_certificates_independently_replayed": true
+  },
+  "fixed_witness_gate_passed": false,
+  "production_standard": "V1"
+}

@@ -1,0 +1,24 @@
+{
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "controller_profile": "acr-balanced-offline-catalog-v1-study",
+  "production_model": "strict-random-tier-v1",
+  "production_refill": "fixed-witness",
+  "research_model": "strict-random-acr-v1-study",
+  "file_sha256": {
+    "match3_acr/acr_controller.cpp": "f0087e2854196546ef2906bcd5328659eb3f97332fc14d6cf3fe0b355abadfd7",
+    "match3_acr/safety_mass_estimator.cpp": "5f124cf56e547d26ad4c3a47d21e1de760e1e7811e114d31e607336491edb778",
+    "match3_acr/acr_benchmark.cpp": "68aab7aa2fe0d56d8d567e5ce9ed55f00f1f13412db504a1bd4a4fb779a8e302",
+    "match3_acr/acr_load.cpp": "aaa3f18d91a7173476b3d7a42442d425c12c534ac5f2b4cf295b7d08d58a603d",
+    "match3_acr/acr_controller.hpp": "6e6354dab2e5d1353cf4e6b9bc4d2515028a30c69e9dea69f29c187db380a791",
+    "match3_acr/build_benchmark.py": "9262f5e4c05f824e29d0f9206e577257cafab88f8318c9ab64984e1f7b9984c4",
+    "match3_acr/experiment-plan.json": "f6eae9430c982853d98d92aace97ec365e7b10a7343505b3aa3adba544d326d7",
+    "match3_difficulty/simulate.cpp": "099c430c6de6510dee43cbfdeeebc5129330908611b25ec6e1f4033a2857e065",
+    "match3_v4/refill/refill_oracle.hpp": "453005580baf1c96251d5850c7ac94f9df41a8feb9dec4934ac9aea00cffdf2b",
+    "match3_v4/refill/refill_experiment.cpp": "b813ae9a4a346bf8a9303e20e4a7be419a2fa964fad37116052c847e43979f8b",
+    "match3_pool/frozen-standard.json": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+    "match3_acr/results/m5-analysis/acr-standard-lock.json": "149a8c2bfa1c9286e6be4d5ab8ecc72bdb1fd914bd49d52241c4c7da41766c52",
+    "match3_acr/results/analysis/m3-summary.json": "7e02205e8c382e38ec9e77721fb1b1a7f6427e2fc37bd4dbf5341008faf6e73c",
+    "match3_acr/results/m5-analysis/validation-summary.json": "9e07973f3e64b79387c94b12ac7cbc56f4c843c92e294e6f8226e51fb2f3cf7a",
+    "match3_acr/load/validation.json": "55676d3b92df271b5d394f696ad03630fa0ca4dc6a3b60a30ad74864552f29ae"
+  }
+}

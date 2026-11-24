@@ -1,0 +1,74 @@
+{
+  "target": "hard",
+  "plan": {
+    "stratum": "g8-m2",
+    "first_seed": 3200000,
+    "candidate_cap": 3000,
+    "target_count": 20,
+    "certificates_per_chunk": 8
+  },
+  "admitted": 20,
+  "matching": 23,
+  "candidates": 1322,
+  "verified": 48,
+  "statuses": {
+    "FAIL_CERTIFIED": 1274,
+    "WIN_CERTIFIED": 48
+  },
+  "all_scored_tiers": {
+    "normal": 14,
+    "easy": 11,
+    "hard": 23
+  },
+  "chunks": [
+    {
+      "chunk": 1,
+      "candidates": 297,
+      "verified": 8,
+      "matches": 2,
+      "wall_s": 0.8423574099870166
+    },
+    {
+      "chunk": 2,
+      "candidates": 346,
+      "verified": 8,
+      "matches": 4,
+      "wall_s": 0.9584608620061772
+    },
+    {
+      "chunk": 3,
+      "candidates": 171,
+      "verified": 8,
+      "matches": 4,
+      "wall_s": 0.5253904749988578
+    },
+    {
+      "chunk": 4,
+      "candidates": 128,
+      "verified": 8,
+      "matches": 4,
+      "wall_s": 0.4266092930047307
+    },
+    {
+      "chunk": 5,
+      "candidates": 175,
+      "verified": 8,
+      "matches": 4,
+      "wall_s": 0.6414790260023437
+    },
+    {
+      "chunk": 6,
+      "candidates": 205,
+      "verified": 8,
+      "matches": 5,
+      "wall_s": 0.8486141879984643
+    }
+  ],
+  "wall_s": 4.264885887008859,
+  "solver_s": 0.602997375,
+  "generation_verify_s": 0.034219311999999995,
+  "scorer_s": 0.00023555800000000002,
+  "scorer_verify_s": 0.032640272000000005,
+  "standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "last_seed": 3201321
+}

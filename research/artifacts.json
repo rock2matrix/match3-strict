@@ -1,0 +1,47 @@
+{
+  "release_tag": "research-2026-11-24",
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "proof_bank_manifest_sha256": "b2393462faf8f1a8a095836d09e9cfa6d36360bc23443d20e4a946099691b6f8",
+  "artifacts": [
+    {
+      "file": "match3-proof-bank-v11-wsl.zip",
+      "bytes": 99880440,
+      "sha256": "bcb7a5be347f500ce70ce70f8cb60ec9597603e1a8f60a55bcddd0df29cf2757",
+      "root": "match3-proof-bank-v11",
+      "entrypoints": ["match3_proofbank/reproduce.sh"],
+      "scope": "Expanded proof-bank evidence, paired benchmarks, difficulty recalibration and 200 sealed proof delta streams"
+    },
+    {
+      "file": "match3-acr-wsl.zip",
+      "bytes": 84270472,
+      "sha256": "520f62e9bc6574c29d90ab3b4743400d07317ab33fae4db71aa4862d6077919d",
+      "root": "match3-acr-wsl",
+      "entrypoints": ["match3_acr/reproduce.sh"],
+      "scope": "ACR M1–M5 protocol, fixed controller comparisons, concurrent load logs and controller-specific calibration inputs"
+    },
+    {
+      "file": "match3-v4-refill-wsl.zip",
+      "bytes": 18004736,
+      "sha256": "c68b1f6f5589a533883612850685d1c6b1dc425b6b5dddbb6d6316a332bcf778",
+      "root": "match3-v4-refill-study",
+      "entrypoints": ["match3_v4/reproduce.sh"],
+      "scope": "Productive cascade V4 and the three refill-policy comparison"
+    },
+    {
+      "file": "match3-cascade-ablation-wsl.zip",
+      "bytes": 47637376,
+      "sha256": "2f498f819bb0a113b1fc08b28b84fb2ff08eccb2a18c84cd14187d7964e652f3",
+      "root": "match3-cascade-ablation",
+      "entrypoints": ["match3_ablation/reproduce.sh"],
+      "scope": "Raw original and confirmation inputs, cascade metric extraction and locked ablation"
+    },
+    {
+      "file": "match3-research-complete-2026-11-24.zip",
+      "bytes": 34106113,
+      "sha256": "2120624e0b1bb7102c7f65dd645863cc72099fc92eb52c0ff036b972489fe579",
+      "root": "match3-research-2026-11-24",
+      "entrypoints": ["match3_difficulty/run.sh", "match3_pool/reproduce.sh"],
+      "scope": "Agent experiments, first V1 calibration, 120 admitted boards and certified pool construction"
+    }
+  ]
+}

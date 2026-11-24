@@ -1,0 +1,24 @@
+{
+  "experiment": "strict-productive-cascade-v4",
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "v1_frozen_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "v3_lock_sha256": "8bf9340abcadebf19ff8a9c7be27a664e7d691f05199c9e7d4725ef68f5ffb51",
+  "calibration_count": 100,
+  "comparison_count": 200,
+  "v4_components": ["exact_early", "exact_challenge", "productive_rate"],
+  "normalization": "E[sum of cleared tiles in extra waves that still advance the goal] / initial goal Q",
+  "weighting": "equal weights and uniform Random reference policy",
+  "fit": "V4 only, original 100 certified boards, midpoint after positions 33 and 66 in ascending ease",
+  "comparison": "Reused prior confirmation cohort, independent of the 100 calibration boards. This is the first V4 comparison and not a new blind cohort for this research direction.",
+  "primary": "Macro mean Spearman of model ease against P1 and P2 for Greedy, Objective and Lookahead within each recipe, equal weight per nonconstant cell; same metric as the prior ablation.",
+  "gates": {
+    "improvement_vs_v1": 0.02,
+    "require_95_paired_interval_lower_above_zero": true,
+    "max_descriptive_recipe_degradation": 0.05,
+    "require_every_recipe_all_three_tiers": true,
+    "require_independent_replay_all_certificates": true,
+    "require_separate_refill_controller_test_before_replacement": true
+  },
+  "bootstrap": {"replicates": 10000, "seed": 202611243, "ci_level": 0.95, "unit": "whole boards resampled within each recipe, paired across models and agents"},
+  "diagnostics": "Display all recipe-agent endpoints and tier coverage; separately compare productive rate against P1/P2/P3 and total overshoot on Random within each recipe; use rank residualization against Random P1/P2 to inspect independent association with the other agent endpoints without changing the fitted model."
+}

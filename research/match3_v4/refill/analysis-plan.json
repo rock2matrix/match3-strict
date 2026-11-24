@@ -1,0 +1,27 @@
+{
+  "experiment": "strict-refill-policy-comparison-v1",
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "production_standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "cohort": "existing independent confirmation set, 8x8 and five colors, 200 certified boards, 50 each from g6-m3, g10-m4, g8-m2, g10-m3",
+  "sample_plan": {
+    "pilot": "first eight certified boards per recipe in the original seed order, reusable as part of the full dataset",
+    "target_board_count": 200,
+    "episodes_per_board_agent_controller": 64,
+    "seed": 202611244,
+    "aggregate_solver_call_cap_per_board": null,
+    "agents": ["Random", "Greedy", "Objective", "Lookahead"],
+    "stochastic_alignment": "counter-based per board, agent, episode, turn and draw, with common policy-action randomness where states coincide"
+  },
+  "natural_distribution": "Every refill wave uses the published fixed integer color quotas, with uniformly shuffled arrangements. Refill size cap 12 and cascade search depth 9, and only stabilized proven continuations are used.",
+  "proof_budget_per_new_successor": {"candidate_checks": 16000, "refill_nodes": 45000, "states": 600, "cascade_limit": 9},
+  "controllers": {
+    "Witness": {"attempts_per_turn": 0, "policy": "play the original verified certificate edge"},
+    "Conditional": {"attempts_per_turn": 6, "policy": "accept the first independently verified safe proposal from up to six draws; use a verified witness when all are rejected or unresolved"},
+    "MinIntervention": {"attempts_per_turn": 1, "policy": "keep one natural proposal exactly when independently verified safe; otherwise use a verified witness"}
+  },
+  "interpretation": "Verified support is a conservative subset of the full mathematical safe set. Finite Conditional is a mixture of the natural law conditioned on verified support and the witness fallback. Single-draw reuse is a minimum-TV construction on verified support, not a unique or exact optimizer over unresolved transitions.",
+  "primary": "For V1/V3/V4 frozen Witness-era definitions and cuts, compare each controller's board scores and tiers against the original exact Witness using paired board IDs. Use within-recipe Spearman and count tier shifts. Witness replay MC against exact Witness calibrates sampling noise.",
+  "cross_agent": "Report macro and per-recipe correlations for Greedy/Objective/Lookahead with spare move and Q+3 endpoints, and same-model tier results. Do not tune candidates from these results.",
+  "diagnostic_thresholds": {"minimum_macro_within_recipe_rank_correlation": 0.8, "maximum_tier_change_rate": 0.15},
+  "eligibility": "Reject any result with a failed Strict certificate replay or basic goal misses. Report attempted, certified-safe, infeasible, and unresolved proposals separately from witness fallbacks. These axes apply to this simulated fixed rule set."
+}

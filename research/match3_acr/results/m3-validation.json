@@ -1,0 +1,466 @@
+{
+  "warm": {
+    "boards": 200,
+    "episodes": 256000,
+    "offline": {
+      "proposals": 60728,
+      "solver_calls": 19501,
+      "certificates_verified": 16186,
+      "natural_edges_replayed": 52245,
+      "candidate_checks": 15619796,
+      "refill_nodes": 59635129,
+      "states": 265407,
+      "cpu_ns": 76341363462,
+      "wall_ns": 78957602076
+    },
+    "mass_audit": {
+      "slots": 8660,
+      "safe": 79870,
+      "unsafe": 6246,
+      "unresolved": 17804,
+      "forecast_samples": 103920
+    },
+    "arms": {
+      "Witness": {
+        "total_turns": 76959,
+        "executed_witness": 76959,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_same_witness": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 70627,
+        "candidate_checks": 0,
+        "refill_nodes": 0,
+        "states": 0,
+        "cache_hits": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "k_counts": {
+          "0": 76959
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 0,
+          "refill_nodes": 0,
+          "states": 0
+        },
+        "witness_reliance_rate": 0.0,
+        "cpu_us": {
+          "50": 0.621,
+          "95": 0.851,
+          "99": 1.042
+        },
+        "wall_us": {
+          "50": 1.182,
+          "95": 1.603,
+          "99": 1.984
+        }
+      },
+      "Fixed1": {
+        "total_turns": 71925,
+        "executed_witness": 15580,
+        "executed_proposal": 56345,
+        "witness_fallbacks": 15580,
+        "proposal_attempts": 71925,
+        "proposal_same_witness": 3018,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 95625,
+        "candidate_checks": 71925,
+        "refill_nodes": 704153,
+        "states": 71669,
+        "cache_hits": 5840,
+        "proposal_safe": 56345,
+        "proposal_unsafe": 2627,
+        "proposal_unknown": 12953,
+        "k_counts": {
+          "1": 71925
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 1,
+          "refill_nodes": 58,
+          "states": 1
+        },
+        "witness_reliance_rate": 0.21661452902328815,
+        "cpu_us": {
+          "50": 6.121,
+          "95": 12.463,
+          "99": 17.763
+        },
+        "wall_us": {
+          "50": 6.722,
+          "95": 13.254,
+          "99": 19.566
+        }
+      },
+      "Fixed3": {
+        "total_turns": 68774,
+        "executed_witness": 7022,
+        "executed_proposal": 61752,
+        "witness_fallbacks": 7022,
+        "proposal_attempts": 94009,
+        "proposal_same_witness": 4159,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 98933,
+        "candidate_checks": 94009,
+        "refill_nodes": 844578,
+        "states": 93716,
+        "cache_hits": 13928,
+        "proposal_safe": 61752,
+        "proposal_unsafe": 5706,
+        "proposal_unknown": 26551,
+        "k_counts": {
+          "3": 68774
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 3,
+          "refill_nodes": 87,
+          "states": 3
+        },
+        "witness_reliance_rate": 0.10210253875010905,
+        "cpu_us": {
+          "50": 7.474,
+          "95": 16.2,
+          "99": 22.332
+        },
+        "wall_us": {
+          "50": 8.085,
+          "95": 17.021,
+          "99": 24.155
+        }
+      },
+      "Fixed6": {
+        "total_turns": 67417,
+        "executed_witness": 3477,
+        "executed_proposal": 63940,
+        "witness_fallbacks": 3477,
+        "proposal_attempts": 109250,
+        "proposal_same_witness": 4888,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 100202,
+        "candidate_checks": 109250,
+        "refill_nodes": 927147,
+        "states": 108951,
+        "cache_hits": 21580,
+        "proposal_safe": 63940,
+        "proposal_unsafe": 8365,
+        "proposal_unknown": 36945,
+        "k_counts": {
+          "6": 67417
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 87,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.051574528679709866,
+        "cpu_us": {
+          "50": 7.504,
+          "95": 21.951,
+          "99": 32.2
+        },
+        "wall_us": {
+          "50": 8.125,
+          "95": 22.853,
+          "99": 33.983
+        }
+      },
+      "Adaptive": {
+        "total_turns": 67874,
+        "executed_witness": 4703,
+        "executed_proposal": 63171,
+        "witness_fallbacks": 4703,
+        "proposal_attempts": 104164,
+        "proposal_same_witness": 4601,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99812,
+        "candidate_checks": 104164,
+        "refill_nodes": 899131,
+        "states": 103869,
+        "cache_hits": 19254,
+        "proposal_safe": 63171,
+        "proposal_unsafe": 8190,
+        "proposal_unknown": 32803,
+        "k_counts": {
+          "2": 9563,
+          "1": 13099,
+          "4": 13031,
+          "6": 15857,
+          "5": 10738,
+          "3": 5586
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 87,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.06929015528773905,
+        "cpu_us": {
+          "50": 7.504,
+          "95": 20.138,
+          "99": 28.994
+        },
+        "wall_us": {
+          "50": 8.125,
+          "95": 21.07,
+          "99": 30.887
+        }
+      }
+    }
+  },
+  "cold": {
+    "boards": 200,
+    "episodes": 256000,
+    "offline": {
+      "proposals": 60728,
+      "solver_calls": 19501,
+      "certificates_verified": 16186,
+      "natural_edges_replayed": 52245,
+      "candidate_checks": 15619796,
+      "refill_nodes": 59635129,
+      "states": 265407,
+      "cpu_ns": 77071691160,
+      "wall_ns": 79678018429
+    },
+    "mass_audit": {
+      "slots": 8660,
+      "safe": 79870,
+      "unsafe": 6246,
+      "unresolved": 17804,
+      "forecast_samples": 103920
+    },
+    "arms": {
+      "Witness": {
+        "total_turns": 76959,
+        "executed_witness": 76959,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_same_witness": 0,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 70627,
+        "candidate_checks": 0,
+        "refill_nodes": 0,
+        "states": 0,
+        "cache_hits": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "k_counts": {
+          "0": 76959
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 0,
+          "refill_nodes": 0,
+          "states": 0
+        },
+        "witness_reliance_rate": 0.0,
+        "cpu_us": {
+          "50": 0.631,
+          "95": 0.852,
+          "99": 1.032
+        },
+        "wall_us": {
+          "50": 1.202,
+          "95": 1.613,
+          "99": 1.944
+        }
+      },
+      "Fixed1": {
+        "total_turns": 71925,
+        "executed_witness": 15580,
+        "executed_proposal": 56345,
+        "witness_fallbacks": 15580,
+        "proposal_attempts": 71925,
+        "proposal_same_witness": 3018,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 95625,
+        "candidate_checks": 71925,
+        "refill_nodes": 704153,
+        "states": 71669,
+        "cache_hits": 0,
+        "proposal_safe": 56345,
+        "proposal_unsafe": 2627,
+        "proposal_unknown": 12953,
+        "k_counts": {
+          "1": 71925
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 1,
+          "refill_nodes": 58,
+          "states": 1
+        },
+        "witness_reliance_rate": 0.21661452902328815,
+        "cpu_us": {
+          "50": 6.262,
+          "95": 12.623,
+          "99": 18.244
+        },
+        "wall_us": {
+          "50": 6.863,
+          "95": 13.425,
+          "99": 19.878
+        }
+      },
+      "Fixed3": {
+        "total_turns": 68774,
+        "executed_witness": 7023,
+        "executed_proposal": 61751,
+        "witness_fallbacks": 7023,
+        "proposal_attempts": 94010,
+        "proposal_same_witness": 4159,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 98933,
+        "candidate_checks": 94010,
+        "refill_nodes": 844581,
+        "states": 93717,
+        "cache_hits": 0,
+        "proposal_safe": 61752,
+        "proposal_unsafe": 5706,
+        "proposal_unknown": 26552,
+        "k_counts": {
+          "3": 68774
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 3,
+          "refill_nodes": 87,
+          "states": 3
+        },
+        "witness_reliance_rate": 0.10211707912874052,
+        "cpu_us": {
+          "50": 7.584,
+          "95": 16.882,
+          "99": 22.492
+        },
+        "wall_us": {
+          "50": 8.185,
+          "95": 17.733,
+          "99": 24.255
+        }
+      },
+      "Fixed6": {
+        "total_turns": 67417,
+        "executed_witness": 3478,
+        "executed_proposal": 63939,
+        "witness_fallbacks": 3478,
+        "proposal_attempts": 109250,
+        "proposal_same_witness": 4888,
+        "timeout_fallbacks": 1,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 100200,
+        "candidate_checks": 109250,
+        "refill_nodes": 927147,
+        "states": 108951,
+        "cache_hits": 0,
+        "proposal_safe": 63940,
+        "proposal_unsafe": 8365,
+        "proposal_unknown": 36945,
+        "k_counts": {
+          "6": 67417
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 87,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.05158936173368735,
+        "cpu_us": {
+          "50": 7.634,
+          "95": 23.313,
+          "99": 34.414
+        },
+        "wall_us": {
+          "50": 8.265,
+          "95": 24.145,
+          "99": 35.516
+        }
+      },
+      "Adaptive": {
+        "total_turns": 67874,
+        "executed_witness": 4703,
+        "executed_proposal": 63171,
+        "witness_fallbacks": 4703,
+        "proposal_attempts": 104164,
+        "proposal_same_witness": 4601,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99812,
+        "candidate_checks": 104164,
+        "refill_nodes": 899131,
+        "states": 103869,
+        "cache_hits": 0,
+        "proposal_safe": 63171,
+        "proposal_unsafe": 8190,
+        "proposal_unknown": 32803,
+        "k_counts": {
+          "2": 9563,
+          "1": 13099,
+          "4": 13031,
+          "6": 15857,
+          "5": 10738,
+          "3": 5586
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 87,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.06929015528773905,
+        "cpu_us": {
+          "50": 7.605,
+          "95": 21.2,
+          "99": 31.368
+        },
+        "wall_us": {
+          "50": 8.226,
+          "95": 22.091,
+          "99": 32.731
+        }
+      }
+    }
+  },
+  "comparison": {
+    "turns.csv": {
+      "rows": 352949,
+      "differences_excluding_timing_and_lookup_cache": 3
+    },
+    "summary.csv": {
+      "rows": 4000,
+      "differences_excluding_timing_and_lookup_cache": 3
+    },
+    "mass.csv": {
+      "rows": 1200,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "episodes.csv": {
+      "rows": 256000,
+      "differences_excluding_timing_and_lookup_cache": 3
+    },
+    "witness-exact.csv": {
+      "rows": 800,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "offline-bank.csv": {
+      "rows": 200,
+      "differences_excluding_timing_and_lookup_cache": 0
+    }
+  }
+}

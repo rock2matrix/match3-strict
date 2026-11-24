@@ -1,0 +1,11 @@
+{
+  "experiment": "exploratory_single_stream_after_primary_validation",
+  "standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "stratum": "g6-m3",
+  "first_seed": 1400000,
+  "candidate_cap": 250,
+  "target_per_tier": 20,
+  "certificates_per_chunk": 8,
+  "admission": "First available match for each tier until its quota is full, in increasing seed order",
+  "note": "Recipe and plan were chosen after reviewing the primary holdout and production results, before scoring this disjoint seed block."
+}

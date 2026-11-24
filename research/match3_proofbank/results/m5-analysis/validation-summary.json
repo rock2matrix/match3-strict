@@ -1,0 +1,37 @@
+{
+  "new_n": 200,
+  "locked_model_sha256": "650df1404e0f5b8019b7ed2e49ea2daeef6c7a62321b4703fd9fb44620ef05e9",
+  "validation_source_sha256": "96873c6515be8b1aec051baf5d2a007c1558076698eed9da2105af8aa2b43632",
+  "by_recipe": {
+    "g6-m3": {
+      "hard": 27,
+      "normal": 10,
+      "easy": 13
+    },
+    "g10-m4": {
+      "hard": 16,
+      "normal": 10,
+      "easy": 24
+    },
+    "g8-m2": {
+      "hard": 25,
+      "normal": 13,
+      "easy": 12
+    },
+    "g10-m3": {
+      "hard": 4,
+      "normal": 18,
+      "easy": 28
+    }
+  },
+  "total": {
+    "easy": 77,
+    "hard": 72,
+    "normal": 51
+  },
+  "has_all_tiers_each_recipe": true,
+  "tier_changes_vs_witness": 76,
+  "tier_changes_vs_acr10": 76,
+  "cross_agent_macro": 0.26891456823957793,
+  "eligible_cells": 19
+}

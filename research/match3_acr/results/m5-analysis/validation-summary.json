@@ -1,0 +1,44 @@
+{
+  "validation_n": 200,
+  "lock_sha256": "149a8c2bfa1c9286e6be4d5ab8ecc72bdb1fd914bd49d52241c4c7da41766c52",
+  "validation_summary_sha256": "c19ee88f7e5c3367a8ad0224e49c814b5893bc2452e2a977ff9b5b79099a6d6d",
+  "counts": {
+    "easy": 63,
+    "normal": 72,
+    "hard": 65
+  },
+  "by_recipe": {
+    "g6-m3": {
+      "hard": 21,
+      "normal": 18,
+      "easy": 11
+    },
+    "g10-m4": {
+      "hard": 13,
+      "normal": 17,
+      "easy": 20
+    },
+    "g8-m2": {
+      "hard": 29,
+      "normal": 15,
+      "easy": 6
+    },
+    "g10-m3": {
+      "hard": 2,
+      "normal": 22,
+      "easy": 26
+    }
+  },
+  "has_all_tiers_per_recipe": true,
+  "changed_after_controller_specific_calibration": 85,
+  "changed_if_reusing_witness_cuts": 116,
+  "rho_within_recipe_vs_witness": {
+    "g6-m3": 0.7640898785986967,
+    "g10-m4": 0.7907157895064393,
+    "g8-m2": 0.7905346771158092,
+    "g10-m3": 0.7483718842315177
+  },
+  "nonconstant_cross_agent_cells": 19,
+  "acr_rank_macro": 0.2736565897472805,
+  "witness_rank_for_acr_outcomes_macro": 0.27197476939564263
+}

@@ -1,0 +1,12 @@
+{
+  "fixtures": 167,
+  "boards": 16,
+  "groups": 80,
+  "offered": 1040000,
+  "admitted": 946941,
+  "rejected": 93059,
+  "verified_natural": 588958,
+  "completion_checks_passed": 946941,
+  "cpu_over_2ms": 7,
+  "deadline_capped": 5
+}

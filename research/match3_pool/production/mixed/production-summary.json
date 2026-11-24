@@ -1,0 +1,190 @@
+{
+  "target": "mixed",
+  "plan": {
+    "experiment": "exploratory_single_stream_after_primary_validation",
+    "standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+    "stratum": "g6-m3",
+    "first_seed": 1400000,
+    "candidate_cap": 250,
+    "target_per_tier": 20,
+    "certificates_per_chunk": 8,
+    "admission": "First available match for each tier until its quota is full, in increasing seed order",
+    "note": "Recipe and plan were chosen after reviewing the primary holdout and production results, before scoring this disjoint seed block."
+  },
+  "admitted": 60,
+  "admitted_per_tier": {
+    "hard": 20,
+    "normal": 20,
+    "easy": 20
+  },
+  "matching": 72,
+  "candidates": 74,
+  "verified": 72,
+  "statuses": {
+    "WIN_CERTIFIED": 72,
+    "FAIL_CERTIFIED": 1,
+    "UNKNOWN": 1
+  },
+  "all_scored_tiers": {
+    "hard": 21,
+    "normal": 27,
+    "easy": 24
+  },
+  "pool_full": true,
+  "raw_candidates_through_last_admission": 67,
+  "last_seed": 1400073,
+  "chunks": [
+    {
+      "chunk": 1,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 2,
+        "normal": 2,
+        "easy": 4
+      },
+      "admitted": {
+        "hard": 2,
+        "normal": 2,
+        "easy": 4
+      },
+      "wall_s": 0.1358037229947513
+    },
+    {
+      "chunk": 2,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 1,
+        "normal": 4,
+        "easy": 3
+      },
+      "admitted": {
+        "hard": 1,
+        "normal": 4,
+        "easy": 3
+      },
+      "wall_s": 0.1409274089965038
+    },
+    {
+      "chunk": 3,
+      "candidates": 10,
+      "verified": 8,
+      "matches": {
+        "hard": 2,
+        "normal": 3,
+        "easy": 3
+      },
+      "admitted": {
+        "hard": 2,
+        "normal": 3,
+        "easy": 3
+      },
+      "wall_s": 0.23089964900282212
+    },
+    {
+      "chunk": 4,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 5,
+        "normal": 3,
+        "easy": 0
+      },
+      "admitted": {
+        "hard": 5,
+        "normal": 3,
+        "easy": 0
+      },
+      "wall_s": 0.13986386799660977
+    },
+    {
+      "chunk": 5,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 2,
+        "normal": 4,
+        "easy": 2
+      },
+      "admitted": {
+        "hard": 2,
+        "normal": 4,
+        "easy": 2
+      },
+      "wall_s": 0.13385879099951126
+    },
+    {
+      "chunk": 6,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 3,
+        "normal": 3,
+        "easy": 2
+      },
+      "admitted": {
+        "hard": 3,
+        "normal": 3,
+        "easy": 2
+      },
+      "wall_s": 0.15609417000086978
+    },
+    {
+      "chunk": 7,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 1,
+        "normal": 3,
+        "easy": 4
+      },
+      "admitted": {
+        "hard": 1,
+        "normal": 1,
+        "easy": 4
+      },
+      "wall_s": 0.13016578600218054
+    },
+    {
+      "chunk": 8,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 3,
+        "normal": 2,
+        "easy": 3
+      },
+      "admitted": {
+        "hard": 3,
+        "normal": 0,
+        "easy": 2
+      },
+      "wall_s": 0.14805342600448057
+    },
+    {
+      "chunk": 9,
+      "candidates": 8,
+      "verified": 8,
+      "matches": {
+        "hard": 2,
+        "normal": 3,
+        "easy": 3
+      },
+      "admitted": {
+        "hard": 1,
+        "normal": 0,
+        "easy": 0
+      },
+      "wall_s": 0.13513765399693511
+    }
+  ],
+  "wall_s": 1.356775259002461,
+  "solver_s": 0.29062140500000005,
+  "median_solver_us": 1953.9105,
+  "generation_verify_s": 0.054178984,
+  "scorer_s": 0.00047556400000000004,
+  "scorer_verify_s": 0.054730259,
+  "standard_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "mixed_plan_sha256": "2297f35f373cd84bc8b3238553b78243bf2f0e7e373ac7d374d6484129712a6c"
+}

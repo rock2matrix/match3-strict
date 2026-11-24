@@ -1,0 +1,91 @@
+{
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "generation_source": "match3_pool/generate.cpp",
+  "generation_source_sha256": "297654963fec2e5fa71ee484a1ec4c42b8ecff7ed6a262dbd4dfb63ea289255d",
+  "generator_binary_sha256": "7d0cef5afe1f4bca27f758a206fb7a4efdb0a2728d724123ae712b4b93a89ca0",
+  "cli_binary_sha256": "ed60a46992b65091fb4b0fe2c586abbbf51247a1e2d60111c27bb896e009414e",
+  "old_holdout_settings_sha256": "dbcd8e2e8ea61b5653dd1be897d15ccb700a516ac43aaf1b5e14855badc445a4",
+  "recipe_seeds": {
+    "g6-m3": 1600000,
+    "g10-m4": 2600000,
+    "g8-m2": 3600000,
+    "g10-m3": 4600000
+  },
+  "certified_quota_per_recipe": 50,
+  "candidate_limit_per_recipe": 4000,
+  "generator_cli_arguments": [
+    "OUTPUT_RECIPE_DIR",
+    50,
+    4000,
+    "RECIPE",
+    "FIRST_SEED"
+  ],
+  "difficulty_evaluated": false,
+  "candidates": 2220,
+  "certified": 200,
+  "prior_candidates_checked_for_overlap": 4706,
+  "verdicts": {
+    "WIN_CERTIFIED": 200,
+    "FAIL_CERTIFIED": 1948,
+    "UNKNOWN": 72
+  },
+  "rows_per_recipe": [
+    {
+      "recipe": "g6-m3",
+      "seed_start": 1600000,
+      "parallel_wall_seconds": 0.5381871470017359,
+      "seed_last": 1600050,
+      "candidates": 51,
+      "verdicts": {
+        "WIN_CERTIFIED": 50,
+        "FAIL_CERTIFIED": 1
+      },
+      "certificate_bytes": 2140460
+    },
+    {
+      "recipe": "g10-m4",
+      "seed_start": 2600000,
+      "parallel_wall_seconds": 17.461528982006712,
+      "seed_last": 2600108,
+      "candidates": 109,
+      "verdicts": {
+        "UNKNOWN": 58,
+        "WIN_CERTIFIED": 50,
+        "FAIL_CERTIFIED": 1
+      },
+      "certificate_bytes": 111217912
+    },
+    {
+      "recipe": "g8-m2",
+      "seed_start": 3600000,
+      "parallel_wall_seconds": 5.06056767499831,
+      "seed_last": 3601503,
+      "candidates": 1504,
+      "verdicts": {
+        "FAIL_CERTIFIED": 1452,
+        "WIN_CERTIFIED": 50,
+        "UNKNOWN": 2
+      },
+      "certificate_bytes": 1635950
+    },
+    {
+      "recipe": "g10-m3",
+      "seed_start": 4600000,
+      "parallel_wall_seconds": 10.486177917991881,
+      "seed_last": 4600555,
+      "candidates": 556,
+      "verdicts": {
+        "FAIL_CERTIFIED": 494,
+        "WIN_CERTIFIED": 50,
+        "UNKNOWN": 12
+      },
+      "certificate_bytes": 17298324
+    }
+  ],
+  "independent_cli_replays_passed": 200,
+  "parallel_generation_wall_seconds": 17.46495372299978,
+  "replay_wall_seconds": 0.977327233995311,
+  "total_wall_seconds": 45.308717708001495,
+  "candidate_csv_sha256": "ab5dd21104b96dadfea03ce3b3d8bb277fd27abb2285816876eb2c1717d95f35",
+  "settings_csv_sha256": "12b3aa6fd0193379cff67a47d8850c7e590812cc90fe747835b6fe66a5db9a3d"
+}

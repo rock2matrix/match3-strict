@@ -1,0 +1,42 @@
+{
+  "solver": {
+    "api_version": "0.1.0",
+    "source_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+    "certificate_schema": "M3CERT 1"
+  },
+  "pool_baseline": {
+    "levels": 120,
+    "refill_policy_version": "fixed-witness",
+    "difficulty_model_version": "strict-random-tier-v1",
+    "difficulty_model_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+    "ease_cutoffs_hard_normal_easy": [
+      0.554,
+      0.651
+    ],
+    "study_release": "research-2026-11-24"
+  },
+  "proof_bank_delta": {
+    "version": "proof-bank-v1.1",
+    "manifest_sha256": "b2393462faf8f1a8a095836d09e9cfa6d36360bc23443d20e4a946099691b6f8",
+    "archive_sha256": "bcb7a5be347f500ce70ce70f8cb60ec9597603e1a8f60a55bcddd0df29cf2757",
+    "independently_verified_continuations": 8628
+  },
+  "candidate": {
+    "refill_policy_version": "ACR v1.1 with targeted proof-bank expansion",
+    "difficulty_model_version": "strict-random-acr-v1.1-targeted-study",
+    "ease_cutoffs_hard_normal_easy": [
+      0.6901041666666667,
+      0.7447916666666666
+    ],
+    "decision": "research_only",
+    "failed_gates": [
+      "fallback_rate_at_most_0.05",
+      "cpu_saving_vs_same_bank_fixed6_at_least_0.10"
+    ]
+  },
+  "pending": [
+    "service_loader_and_atomic_version_switch",
+    "end_to_end_service_load",
+    "human_playtesting"
+  ]
+}

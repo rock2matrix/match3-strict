@@ -1,0 +1,18 @@
+{
+  "archive_query_links_verified": 8628,
+  "boards": 200,
+  "certificate_payload_bytes": 116013245,
+  "expanded_continuations": 8628,
+  "independently_checked_full_child_proofs": 8628,
+  "independently_replayed_full_edges": 8628,
+  "matched_base_unseen_verified": 8628,
+  "query_dispositions": {
+    "fail_certified_not_indexed": 386,
+    "same_budget_unknown_cached": 122,
+    "solver_unresolved": 112,
+    "verified_safe": 8628
+  },
+  "samples_verified": 186,
+  "selection": "largest continuation certificate in each nonempty board archive",
+  "wrong_goal_rejected_on": "s1600001-g6-m3"
+}

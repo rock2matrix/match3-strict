@@ -1,0 +1,238 @@
+{
+  "warm": {
+    "boards": 200,
+    "episodes": 102400,
+    "offline": {
+      "proposals": 60728,
+      "solver_calls": 19501,
+      "certificates_verified": 16186,
+      "natural_edges_replayed": 52245,
+      "candidate_checks": 15619796,
+      "refill_nodes": 59635129,
+      "states": 265407,
+      "cpu_ns": 77640420753,
+      "wall_ns": 80082672906
+    },
+    "mass_audit": {
+      "slots": 8660,
+      "safe": 79870,
+      "unsafe": 6246,
+      "unresolved": 17804,
+      "forecast_samples": 103920
+    },
+    "arms": {
+      "Fixed6": {
+        "total_turns": 67584,
+        "executed_witness": 3497,
+        "executed_proposal": 64087,
+        "witness_fallbacks": 3497,
+        "proposal_attempts": 110108,
+        "proposal_same_witness": 4947,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99757,
+        "candidate_checks": 110108,
+        "refill_nodes": 929273,
+        "states": 109795,
+        "cache_hits": 22098,
+        "proposal_safe": 64087,
+        "proposal_unsafe": 8643,
+        "proposal_unknown": 37378,
+        "k_counts": {
+          "6": 67584
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 92,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.05174301609848485,
+        "cpu_us": {
+          "50": 7.705,
+          "95": 22.642,
+          "99": 32.25
+        },
+        "wall_us": {
+          "50": 8.346,
+          "95": 23.574,
+          "99": 33.853
+        }
+      },
+      "Adaptive": {
+        "total_turns": 68076,
+        "executed_witness": 4781,
+        "executed_proposal": 63295,
+        "witness_fallbacks": 4781,
+        "proposal_attempts": 104888,
+        "proposal_same_witness": 4610,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99353,
+        "candidate_checks": 104888,
+        "refill_nodes": 900601,
+        "states": 104587,
+        "cache_hits": 19656,
+        "proposal_safe": 63295,
+        "proposal_unsafe": 8419,
+        "proposal_unknown": 33174,
+        "k_counts": {
+          "2": 9625,
+          "1": 13141,
+          "4": 13040,
+          "6": 15862,
+          "5": 10802,
+          "3": 5606
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 92,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.0702303308067454,
+        "cpu_us": {
+          "50": 7.684,
+          "95": 20.538,
+          "99": 29.184
+        },
+        "wall_us": {
+          "50": 8.316,
+          "95": 21.48,
+          "99": 31.108
+        }
+      }
+    }
+  },
+  "cold": {
+    "boards": 200,
+    "episodes": 102400,
+    "offline": {
+      "proposals": 60728,
+      "solver_calls": 19501,
+      "certificates_verified": 16186,
+      "natural_edges_replayed": 52245,
+      "candidate_checks": 15619796,
+      "refill_nodes": 59635129,
+      "states": 265407,
+      "cpu_ns": 73359157586,
+      "wall_ns": 75782480238
+    },
+    "mass_audit": {
+      "slots": 8660,
+      "safe": 79870,
+      "unsafe": 6246,
+      "unresolved": 17804,
+      "forecast_samples": 103920
+    },
+    "arms": {
+      "Fixed6": {
+        "total_turns": 67584,
+        "executed_witness": 3497,
+        "executed_proposal": 64087,
+        "witness_fallbacks": 3497,
+        "proposal_attempts": 110108,
+        "proposal_same_witness": 4947,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99757,
+        "candidate_checks": 110108,
+        "refill_nodes": 929273,
+        "states": 109795,
+        "cache_hits": 0,
+        "proposal_safe": 64087,
+        "proposal_unsafe": 8643,
+        "proposal_unknown": 37378,
+        "k_counts": {
+          "6": 67584
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 92,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.05174301609848485,
+        "cpu_us": {
+          "50": 7.354,
+          "95": 22.281,
+          "99": 31.84
+        },
+        "wall_us": {
+          "50": 7.945,
+          "95": 23.153,
+          "99": 33.833
+        }
+      },
+      "Adaptive": {
+        "total_turns": 68076,
+        "executed_witness": 4781,
+        "executed_proposal": 63295,
+        "witness_fallbacks": 4781,
+        "proposal_attempts": 104888,
+        "proposal_same_witness": 4610,
+        "timeout_fallbacks": 0,
+        "cap_fallbacks": 0,
+        "planned_witness_turns": 0,
+        "extra_waves": 99353,
+        "candidate_checks": 104888,
+        "refill_nodes": 900601,
+        "states": 104587,
+        "cache_hits": 0,
+        "proposal_safe": 63295,
+        "proposal_unsafe": 8419,
+        "proposal_unknown": 33174,
+        "k_counts": {
+          "2": 9625,
+          "1": 13141,
+          "4": 13040,
+          "6": 15862,
+          "5": 10802,
+          "3": 5606
+        },
+        "max_counts_per_turn": {
+          "candidate_checks": 6,
+          "refill_nodes": 92,
+          "states": 6
+        },
+        "witness_reliance_rate": 0.0702303308067454,
+        "cpu_us": {
+          "50": 7.343,
+          "95": 20.288,
+          "99": 28.082
+        },
+        "wall_us": {
+          "50": 7.935,
+          "95": 21.25,
+          "99": 30.337
+        }
+      }
+    }
+  },
+  "comparison": {
+    "turns.csv": {
+      "rows": 135660,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "summary.csv": {
+      "rows": 1600,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "mass.csv": {
+      "rows": 1200,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "episodes.csv": {
+      "rows": 102400,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "witness-exact.csv": {
+      "rows": 800,
+      "differences_excluding_timing_and_lookup_cache": 0
+    },
+    "offline-bank.csv": {
+      "rows": 200,
+      "differences_excluding_timing_and_lookup_cache": 0
+    }
+  }
+}

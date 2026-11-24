@@ -1,0 +1,507 @@
+{
+  "cohort_size": 200,
+  "episodes_per_board_agent_controller": 64,
+  "cuts": {
+    "V1": [
+      0.554,
+      0.651
+    ],
+    "V3": [
+      0.47383498800275003,
+      0.60792331950975
+    ],
+    "V4": [
+      0.40634669047144933,
+      0.49823903695370336
+    ]
+  },
+  "plan_sha256": "4e1367a70ad7835971fda011345f5b65ffc7dbc39c31a88ce05f53524c3b4e3f",
+  "changes_vs_exact_witness": {
+    "Witness": {
+      "V1": {
+        "macro_within_recipe_rho": 0.909825956924837,
+        "tier_changes": 44,
+        "tier_change_rate": 0.22,
+        "two_tier_changes": 0,
+        "mean_abs_score_change": 0.029255849882987826,
+        "mean_score_change": -0.0007459587621668401,
+        "rank_gate": true,
+        "tier_gate": false
+      },
+      "V3": {
+        "macro_within_recipe_rho": 0.9133939295032215,
+        "tier_changes": 24,
+        "tier_change_rate": 0.12,
+        "two_tier_changes": 0,
+        "mean_abs_score_change": 0.032843008629685755,
+        "mean_score_change": 0.0008025225196057729,
+        "rank_gate": true,
+        "tier_gate": true
+      },
+      "V4": {
+        "macro_within_recipe_rho": 0.9135787651235829,
+        "tier_changes": 37,
+        "tier_change_rate": 0.185,
+        "two_tier_changes": 0,
+        "mean_abs_score_change": 0.025332932814490363,
+        "mean_score_change": 0.0006429593107710762,
+        "rank_gate": true,
+        "tier_gate": false
+      }
+    },
+    "Conditional": {
+      "V1": {
+        "macro_within_recipe_rho": 0.7207214053416686,
+        "tier_changes": 116,
+        "tier_change_rate": 0.58,
+        "two_tier_changes": 21,
+        "mean_abs_score_change": 0.0983960114300178,
+        "mean_score_change": 0.09651966623783316,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.36,
+          "paired_board_bootstrap_ci95": [
+            0.285,
+            0.44
+          ]
+        }
+      },
+      "V3": {
+        "macro_within_recipe_rho": 0.7547812241454959,
+        "tier_changes": 74,
+        "tier_change_rate": 0.37,
+        "two_tier_changes": 6,
+        "mean_abs_score_change": 0.09030818773306662,
+        "mean_score_change": 0.08552908501960577,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.25,
+          "paired_board_bootstrap_ci95": [
+            0.175,
+            0.32
+          ]
+        }
+      },
+      "V4": {
+        "macro_within_recipe_rho": 0.7401813158458379,
+        "tier_changes": 108,
+        "tier_change_rate": 0.54,
+        "two_tier_changes": 14,
+        "mean_abs_score_change": 0.07791943333367016,
+        "mean_score_change": 0.07508696972743774,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.355,
+          "paired_board_bootstrap_ci95": [
+            0.275,
+            0.435
+          ]
+        }
+      }
+    },
+    "MinIntervention": {
+      "V1": {
+        "macro_within_recipe_rho": 0.7439091824650138,
+        "tier_changes": 115,
+        "tier_change_rate": 0.575,
+        "two_tier_changes": 18,
+        "mean_abs_score_change": 0.09528959289031717,
+        "mean_score_change": 0.09347279123783316,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.355,
+          "paired_board_bootstrap_ci95": [
+            0.275,
+            0.43
+          ]
+        }
+      },
+      "V3": {
+        "macro_within_recipe_rho": 0.7770143741451568,
+        "tier_changes": 71,
+        "tier_change_rate": 0.355,
+        "two_tier_changes": 7,
+        "mean_abs_score_change": 0.08586609675549825,
+        "mean_score_change": 0.08146658501960577,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.235,
+          "paired_board_bootstrap_ci95": [
+            0.165,
+            0.305
+          ]
+        }
+      },
+      "V4": {
+        "macro_within_recipe_rho": 0.7793445703628842,
+        "tier_changes": 103,
+        "tier_change_rate": 0.515,
+        "two_tier_changes": 9,
+        "mean_abs_score_change": 0.07317654209871252,
+        "mean_score_change": 0.07027425271354885,
+        "rank_gate": false,
+        "tier_gate": false,
+        "excess_tier_shift_vs_witness_mc": {
+          "difference": 0.33,
+          "paired_board_bootstrap_ci95": [
+            0.255,
+            0.41
+          ]
+        }
+      }
+    }
+  },
+  "execution": {
+    "Witness": {
+      "g6-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 15671,
+        "executed_witness": 15671,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "proposal_cap": 0,
+        "proposal_depth": 0,
+        "proposal_same_witness": 0,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 0.0,
+        "different_from_witness_per_turn": 0.0,
+        "unresolved_per_proposal": 0.0
+      },
+      "g10-m4": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 23200,
+        "executed_witness": 23200,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "proposal_cap": 0,
+        "proposal_depth": 0,
+        "proposal_same_witness": 0,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 0.0,
+        "different_from_witness_per_turn": 0.0,
+        "unresolved_per_proposal": 0.0
+      },
+      "g8-m2": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 17607,
+        "executed_witness": 17607,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "proposal_cap": 0,
+        "proposal_depth": 0,
+        "proposal_same_witness": 0,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 0.0,
+        "different_from_witness_per_turn": 0.0,
+        "unresolved_per_proposal": 0.0
+      },
+      "g10-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 20444,
+        "executed_witness": 20444,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "proposal_cap": 0,
+        "proposal_depth": 0,
+        "proposal_same_witness": 0,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 0.0,
+        "different_from_witness_per_turn": 0.0,
+        "unresolved_per_proposal": 0.0
+      },
+      "all": {
+        "episodes": 51200,
+        "wins": 51200,
+        "total_turns": 76922,
+        "executed_witness": 76922,
+        "executed_proposal": 0,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 0,
+        "proposal_safe": 0,
+        "proposal_unsafe": 0,
+        "proposal_unknown": 0,
+        "proposal_cap": 0,
+        "proposal_depth": 0,
+        "proposal_same_witness": 0,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 0.0,
+        "different_from_witness_per_turn": 0.0,
+        "unresolved_per_proposal": 0.0
+      }
+    },
+    "Conditional": {
+      "g6-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 15060,
+        "executed_witness": 0,
+        "executed_proposal": 15060,
+        "witness_fallbacks": 0,
+        "proposal_attempts": 15145,
+        "proposal_safe": 15060,
+        "proposal_unsafe": 77,
+        "proposal_unknown": 8,
+        "proposal_cap": 68,
+        "proposal_depth": 5,
+        "proposal_same_witness": 627,
+        "witness_fallback_per_turn": 0.0,
+        "certified_natural_per_turn": 1.0,
+        "different_from_witness_per_turn": 0.9583665338645418,
+        "unresolved_per_proposal": 0.0005282271376691978
+      },
+      "g10-m4": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 21836,
+        "executed_witness": 9,
+        "executed_proposal": 21827,
+        "witness_fallbacks": 9,
+        "proposal_attempts": 22323,
+        "proposal_safe": 21827,
+        "proposal_unsafe": 33,
+        "proposal_unknown": 463,
+        "proposal_cap": 29,
+        "proposal_depth": 12,
+        "proposal_same_witness": 1301,
+        "witness_fallback_per_turn": 0.00041216339989008974,
+        "certified_natural_per_turn": 0.9995878366001099,
+        "different_from_witness_per_turn": 0.9400073273493313,
+        "unresolved_per_proposal": 0.020740939837835416
+      },
+      "g8-m2": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 16448,
+        "executed_witness": 191,
+        "executed_proposal": 16257,
+        "witness_fallbacks": 191,
+        "proposal_attempts": 20051,
+        "proposal_safe": 16257,
+        "proposal_unsafe": 3782,
+        "proposal_unknown": 12,
+        "proposal_cap": 97,
+        "proposal_depth": 8,
+        "proposal_same_witness": 600,
+        "witness_fallback_per_turn": 0.011612354085603113,
+        "certified_natural_per_turn": 0.9883876459143969,
+        "different_from_witness_per_turn": 0.951909046692607,
+        "unresolved_per_proposal": 0.0005984738915764799
+      },
+      "g10-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 19259,
+        "executed_witness": 156,
+        "executed_proposal": 19103,
+        "witness_fallbacks": 156,
+        "proposal_attempts": 22564,
+        "proposal_safe": 19103,
+        "proposal_unsafe": 3297,
+        "proposal_unknown": 164,
+        "proposal_cap": 62,
+        "proposal_depth": 13,
+        "proposal_same_witness": 986,
+        "witness_fallback_per_turn": 0.008100109039929384,
+        "certified_natural_per_turn": 0.9918998909600706,
+        "different_from_witness_per_turn": 0.9407030479256452,
+        "unresolved_per_proposal": 0.00726821485552207
+      },
+      "all": {
+        "episodes": 51200,
+        "wins": 51200,
+        "total_turns": 72603,
+        "executed_witness": 356,
+        "executed_proposal": 72247,
+        "witness_fallbacks": 356,
+        "proposal_attempts": 80083,
+        "proposal_safe": 72247,
+        "proposal_unsafe": 7189,
+        "proposal_unknown": 647,
+        "proposal_cap": 256,
+        "proposal_depth": 38,
+        "proposal_same_witness": 3514,
+        "witness_fallback_per_turn": 0.0049033786482652235,
+        "certified_natural_per_turn": 0.9950966213517348,
+        "different_from_witness_per_turn": 0.9466964175034089,
+        "unresolved_per_proposal": 0.008079117915163019
+      }
+    },
+    "MinIntervention": {
+      "g6-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 15061,
+        "executed_witness": 70,
+        "executed_proposal": 14991,
+        "witness_fallbacks": 70,
+        "proposal_attempts": 15061,
+        "proposal_safe": 14991,
+        "proposal_unsafe": 62,
+        "proposal_unknown": 8,
+        "proposal_cap": 56,
+        "proposal_depth": 5,
+        "proposal_same_witness": 624,
+        "witness_fallback_per_turn": 0.0046477657526060685,
+        "certified_natural_per_turn": 0.9953522342473939,
+        "different_from_witness_per_turn": 0.9539207223955912,
+        "unresolved_per_proposal": 0.000531173228869265
+      },
+      "g10-m4": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 21864,
+        "executed_witness": 326,
+        "executed_proposal": 21538,
+        "witness_fallbacks": 326,
+        "proposal_attempts": 21864,
+        "proposal_safe": 21538,
+        "proposal_unsafe": 30,
+        "proposal_unknown": 296,
+        "proposal_cap": 26,
+        "proposal_depth": 13,
+        "proposal_same_witness": 1230,
+        "witness_fallback_per_turn": 0.014910354921331869,
+        "certified_natural_per_turn": 0.9850896450786681,
+        "different_from_witness_per_turn": 0.9288327844859129,
+        "unresolved_per_proposal": 0.01353823637028906
+      },
+      "g8-m2": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 16572,
+        "executed_witness": 1551,
+        "executed_proposal": 15021,
+        "witness_fallbacks": 1551,
+        "proposal_attempts": 16572,
+        "proposal_safe": 15021,
+        "proposal_unsafe": 1540,
+        "proposal_unknown": 11,
+        "proposal_cap": 76,
+        "proposal_depth": 8,
+        "proposal_same_witness": 428,
+        "witness_fallback_per_turn": 0.09359160028964518,
+        "certified_natural_per_turn": 0.9064083997103548,
+        "different_from_witness_per_turn": 0.8805817040791697,
+        "unresolved_per_proposal": 0.0006637702148201786
+      },
+      "g10-m3": {
+        "episodes": 12800,
+        "wins": 12800,
+        "total_turns": 19373,
+        "executed_witness": 1547,
+        "executed_proposal": 17826,
+        "witness_fallbacks": 1547,
+        "proposal_attempts": 19373,
+        "proposal_safe": 17826,
+        "proposal_unsafe": 1438,
+        "proposal_unknown": 109,
+        "proposal_cap": 57,
+        "proposal_depth": 12,
+        "proposal_same_witness": 690,
+        "witness_fallback_per_turn": 0.07985340422237135,
+        "certified_natural_per_turn": 0.9201465957776287,
+        "different_from_witness_per_turn": 0.8845300160016518,
+        "unresolved_per_proposal": 0.005626387239973159
+      },
+      "all": {
+        "episodes": 51200,
+        "wins": 51200,
+        "total_turns": 72870,
+        "executed_witness": 3494,
+        "executed_proposal": 69376,
+        "witness_fallbacks": 3494,
+        "proposal_attempts": 72870,
+        "proposal_safe": 69376,
+        "proposal_unsafe": 3070,
+        "proposal_unknown": 424,
+        "proposal_cap": 215,
+        "proposal_depth": 38,
+        "proposal_same_witness": 2972,
+        "witness_fallback_per_turn": 0.0479484012625223,
+        "certified_natural_per_turn": 0.9520515987374777,
+        "different_from_witness_per_turn": 0.9112666392205298,
+        "unresolved_per_proposal": 0.005818581034719363
+      }
+    }
+  },
+  "cross_agent_cells_shared": 17,
+  "cross_agent_macro_shared_cells": {
+    "Witness": {
+      "V1": 0.20710584520925987,
+      "V3": 0.19410242973161992,
+      "V4": 0.1828101699997149
+    },
+    "Conditional": {
+      "V1": 0.22976790674001213,
+      "V3": 0.2457365857560973,
+      "V4": 0.22930301509566078
+    },
+    "MinIntervention": {
+      "V1": 0.24282099515917413,
+      "V3": 0.25143755698999326,
+      "V4": 0.23700799171135345
+    },
+    "WitnessExact": {
+      "V1": 0.17854583779526412,
+      "V3": 0.19018424642636314,
+      "V4": 0.16284165400970713
+    },
+    "WitnessExactPaired": {
+      "V1": 0.17854583779526412,
+      "V3": 0.19018424642636314,
+      "V4": 0.16284165400970713
+    }
+  },
+  "verification": {
+    "witness_exact": {
+      "archived_exact_max_error": {
+        "exact_early": 0.0,
+        "exact_challenge": 0.0,
+        "exact_chain": 0.0,
+        "exact_mean_productive_extra_tiles": 9.992007221626409e-16
+      },
+      "agent_rows_changed_by_canonical_index": 0,
+      "max_change_by_canonical_index": {
+        "exact_early": 9.992007221626409e-16,
+        "exact_challenge": 9.992007221626409e-16,
+        "exact_chain": 9.992007221626409e-16,
+        "exact_mean_productive_extra_tiles": 1.021405182655144e-14
+      }
+    },
+    "oracle_counters": {
+      "proposals": 152953,
+      "cache_hits": 29161,
+      "solver_calls": 16722,
+      "certificates_verified": 13863,
+      "natural_edges_replayed": 141623,
+      "candidate_checks": 9869970,
+      "refill_nodes": 37488223,
+      "states": 167955
+    }
+  }
+}

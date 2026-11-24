@@ -6,6 +6,10 @@ A C++20 library and command-line tool for verifying strictly solvable match-thre
 
 [MIT License](LICENSE)
 
+## Research evidence
+
+The research archive records certified level-pool generation, difficulty calibration, controlled refill and Proof-Bank v1.1. The current pool retains fixed certified witnesses and the frozen V1 standard. ACR v1.1 remains experimental. [Research index](research/README.md) · [Release archives](https://github.com/rock2matrix/match3-strict/releases/tag/research-2026-11-24)
+
 ## Rules and results
 
 - The input is a stable rectangular board. A legal move exchanges two orthogonally adjacent pieces and forms a horizontal or vertical run of at least three pieces of one color.

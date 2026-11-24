@@ -1,0 +1,44 @@
+{
+  "experiment": "ACR v1.1 targeted proof-bank expansion",
+  "solver_commit": "71aac8aab2e3fae2fa798e075f0f7d52b1220754",
+  "production_model_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "cohort": "the 200 certified confirmation boards, four fixed recipes × 50 boards",
+  "evidence": {
+    "tuning_source": "prior ACR v1.0 online ledger and distinct offline profiling episodes",
+    "prior_incidence": "multi_slack and multi_tight dominate UNKNOWN; last_short may instead be known unsafe",
+    "unit": "exact state/action and a complete natural quota trajectory to a stable successor",
+    "extra_offline_solver_calls_per_board_cap": 240,
+    "candidate_priority": "repeated unresolved stable successors on actual ACR profiling paths first, using quotas and deterministic tie breaks",
+    "safety": "accept only a stable terminal meeting goal or a verified certificate matching exact stable successor, replay the full wave trajectory independently",
+    "base": "reconstruct prior frozen bank and keep original v1.0 forecasts; independent matched audit does not change base planning",
+    "targeted": "offline verified expansion followed by frozen support; update Z_cert forecast from independent matched state/action audits; do not change dynamic K formula or cap",
+    "evaluation": "separate audit/tuning and gameplay draws; same matched audit queries to base and v1.1",
+    "distortion": "UNKNOWN stays distinct from known unsafe; no claim to have enumerated the true safe set"
+  },
+  "benchmark": {
+    "controllers": ["Fixed6", "Adaptive"],
+    "banks": ["base", "targeted"],
+    "cache_modes": ["cold_no_memo", "private_memo"],
+    "episodes_per_board_agent_arm": 64,
+    "agents": ["Random", "Greedy", "Objective", "Lookahead"],
+    "evaluation_seed": 202611249,
+    "work_limits": {"proposals": 6, "checks": 512, "refill_work": 8192, "endpoint_checks": 128, "thread_cpu_soft_ms": 2},
+    "clock": "thread CPU time for decisions and separate steady-clock wall time; offline solve and telemetry costs are reported separately",
+    "color_metric": "mean position color TV against fixed natural quotas among first waves of size 3, 4 or 5, standardized by Fixed6 first-wave sizes in the same bank/cache mode",
+    "bootstrap": {"replicates": 2500, "seed": 202611251, "resample": "paired certified board within each fixed recipe"}
+  },
+  "gates_for_targeted_adaptive": {
+    "strict_goal_rate": 1,
+    "unverified_executions": 0,
+    "max_witness_reliance": 0.05,
+    "min_cpu_saving_vs_same_bank_fixed6": 0.1,
+    "max_cpu_p95_ms": 2,
+    "max_first_wave_color_tv_delta_with_sampling_tolerance": 0.01,
+    "report": "require checks in both cache settings; report point estimates and paired intervals. Color tolerance is a study-defined one-point measurement margin; report exact point relation separately. Without true service tests and stable calibration actual deployment is a separate decision."
+  },
+  "difficulty": {
+    "production": "preserve fixed witness and original 120 entries",
+    "research": "bind v1.1 profile version to its own thresholds from original 100 boards; validate on the previous tier-pool 200 seeds, disjoint from evaluation and calibration boards",
+    "seed": 202611250
+  }
+}

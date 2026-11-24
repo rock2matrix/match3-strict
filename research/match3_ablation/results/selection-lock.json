@@ -1,0 +1,100 @@
+{
+  "protocol_sha256": "a7f6a91e60c0fc6ace3890564a87ec4d682b51b41effef30a8742e0400d3937d",
+  "v1_sha256": "9b3efabf3844af74758f41cafea908fb29b2dce55676eca3edd6e7d9d42a3560",
+  "fitted": {
+    "V1": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "exact_chain"
+      ],
+      "cuts": [
+        0.554,
+        0.651
+      ]
+    },
+    "V2": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "exact_extra_tiles_capped6"
+      ],
+      "cuts": [
+        0.5129433324105513,
+        0.6159489424341802
+      ]
+    },
+    "V3": {
+      "components": [
+        "exact_early",
+        "exact_challenge"
+      ],
+      "cuts": [
+        0.47383498800275003,
+        0.60792331950975
+      ]
+    },
+    "V2_cap9": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "exact_extra_tiles_capped9"
+      ],
+      "cuts": [
+        0.48441221410078783,
+        0.5825918735627045
+      ]
+    },
+    "V2_mean": {
+      "components": [
+        "exact_early",
+        "exact_challenge",
+        "mean_extra_tiles_over_mean_plus_3"
+      ],
+      "cuts": [
+        0.5230392864063311,
+        0.621971033413752
+      ]
+    }
+  },
+  "selected_for_confirmation": "V1",
+  "locked_challenger": "V3",
+  "exploratory_delta_for_challenger": 0.007235993145568387,
+  "input_hashes": {
+    "calibration_candidates": "58b7c04fe70adc312021db01f5f353ed399d176589627ff92c6590031a795648",
+    "calibration_policies": "fe230afb14d4b3fee3dbc6381dd833285648b5888fa583d61eb333cab5942c9d",
+    "calibration_features": "e3d007aa0b123d02ce387b7a91301241c666feb896c913707b77a4ac7c2033f5",
+    "calibration_labels": "f0bdd93328f1f37bbc3b597bc5c5f32609f72719831efd1b401093d0371ad5bc",
+    "holdout_candidates": "7cf194c504bc6b95b76c445275fdbecd7c36b854c3d1be686b6b4b16c3a8a4d8",
+    "holdout_policies": "7e48e179481ce4dd468fede6ecdd9452ba3b74dab1ff8c53361391a27cd39811",
+    "holdout_features": "e728fd4707ec37ae65ebf0f3c37ca040dc9977e17526e181cb34c5098e6d70d3",
+    "holdout_labels": "2c70d2044aa97be7bb23465bb457c988a1ca40ad44535fa1ce0fedaccc258071"
+  },
+  "calibration_label_counts": {
+    "V1": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V2": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V3": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V2_cap9": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    },
+    "V2_mean": {
+      "easy": 34,
+      "normal": 33,
+      "hard": 33
+    }
+  }
+}

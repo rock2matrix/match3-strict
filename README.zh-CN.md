@@ -6,6 +6,10 @@
 
 [MIT 许可证](LICENSE)
 
+## 研究资料
+
+归档涵盖认证关卡池、难度校准、受控补充和 Proof-Bank v1.1。现有关卡池继续使用固定安全见证和冻结的 V1。ACR v1.1 保留为研究候选。[研究索引](research/README.zh-CN.md) · [完整归档](https://github.com/rock2matrix/match3-strict/releases/tag/research-2026-11-24)
+
 ## 规则与判定
 
 - 输入为稳定的矩形棋盘。合法操作是横向或纵向交换两个相邻方块，使三个或更多同色方块连成一线。

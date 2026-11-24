@@ -1,0 +1,30 @@
+{
+  "level": "s1600001-g6-m3",
+  "ordinal": 1,
+  "tests": {
+    "valid_replay": {
+      "exit_code": 0,
+      "error": null
+    },
+    "illegal_same_cell_swap": {
+      "exit_code": 1,
+      "error": "Bank for s1600001-g6-m3: archived action is not a legal swap on the parent"
+    },
+    "bad_refill_quota": {
+      "exit_code": 1,
+      "error": "Bank for s1600001-g6-m3: independent replay disagrees with archived successor"
+    },
+    "truncated_certificate": {
+      "exit_code": 1,
+      "error": "Bank for s1600001-g6-m3: truncated certificate payload"
+    },
+    "malformed_certificate": {
+      "exit_code": 1,
+      "error": "Bank for s1600001-g6-m3: archived Strict certificate failed independent public verification"
+    },
+    "duplicated_record_ordinal": {
+      "exit_code": 1,
+      "error": "Bank for s1600001-g6-m3: archive file has wrong level or duplicate record ordinal"
+    }
+  }
+}

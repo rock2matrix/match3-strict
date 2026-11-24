@@ -1,0 +1,534 @@
+{
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 202611242,
+  "n_certified_levels": 200,
+  "primary_nonconstant_cells": 17,
+  "maximum_absolute_score_error": 1.1102230246251565e-16,
+  "maximum_absolute_cell_rho_error": 1.1102230246251565e-16,
+  "previous_exact_event_parity_max_abs_error": {
+    "calibration": {
+      "exact_early": 4.970468481246826e-13,
+      "exact_challenge": 4.969913369734513e-13,
+      "exact_chain": 4.94992935529126e-13
+    },
+    "holdout": {
+      "exact_early": 4.899414207670816e-13,
+      "exact_challenge": 4.989897384177766e-13,
+      "exact_chain": 4.939382236557321e-13
+    }
+  },
+  "macro_rho": {
+    "V1": 0.17854583779526415,
+    "V2": 0.17100892048131944,
+    "V3": 0.19018424642636314
+  },
+  "model_details": {
+    "V1": {
+      "by_agent": {
+        "Greedy": 0.1833652729214399,
+        "Objective": 0.14918119139565103,
+        "Lookahead": 0.20116327501823114
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.1638743001576135,
+        "exact_early": 0.21375752812562565
+      },
+      "by_recipe": {
+        "g6-m3": 0.18166079508265573,
+        "g10-m4": 0.19512386573755305,
+        "g8-m2": 0.15285256636214786,
+        "g10-m3": 0.19817149903710593
+      }
+    },
+    "V2": {
+      "by_agent": {
+        "Greedy": 0.17813649927145372,
+        "Objective": 0.1431669112776583,
+        "Lookahead": 0.18887231937879256
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.16811995186456216,
+        "exact_early": 0.17794244516153693
+      },
+      "by_recipe": {
+        "g6-m3": 0.19079069078668554,
+        "g10-m4": 0.2116978621999998,
+        "g8-m2": 0.11633979763645523,
+        "g10-m3": 0.19748733530091075
+      }
+    },
+    "V3": {
+      "by_agent": {
+        "Greedy": 0.2129291027021313,
+        "Objective": 0.14417528628482496,
+        "Lookahead": 0.20435040778182595
+      },
+      "by_endpoint": {
+        "exact_challenge": 0.18190745853985926,
+        "exact_early": 0.2100485373539724
+      },
+      "by_recipe": {
+        "g6-m3": 0.18826435439034098,
+        "g10-m4": 0.2595087959152008,
+        "g8-m2": 0.10609770123603046,
+        "g10-m3": 0.2484294337500411
+      }
+    }
+  },
+  "differences_vs_v1": {
+    "V2": {
+      "delta": -0.007536917313944708,
+      "ci95": [
+        -0.029664891581021775,
+        0.011690419863282783
+      ],
+      "original_ci95": [
+        -0.030176318923714626,
+        0.011933451983495802
+      ]
+    },
+    "V3": {
+      "delta": 0.011638408631098995,
+      "ci95": [
+        -0.019154208014635514,
+        0.041435407423639
+      ],
+      "original_ci95": [
+        -0.018287604757915417,
+        0.042062805205094374
+      ]
+    }
+  },
+  "v3_noninferiority_margin": -0.02,
+  "v3_ci_lower_distance_above_margin": 0.0008457919853644864,
+  "v3_ci_excludes_a_loss_larger_than_margin": true,
+  "tier_coverage": {
+    "g6-m3": {
+      "V1": {
+        "hard": 12,
+        "normal": 24,
+        "easy": 14
+      },
+      "V2": {
+        "hard": 8,
+        "normal": 24,
+        "easy": 18
+      },
+      "V3": {
+        "hard": 0,
+        "normal": 3,
+        "easy": 47
+      }
+    },
+    "g10-m4": {
+      "V1": {
+        "hard": 13,
+        "normal": 19,
+        "easy": 18
+      },
+      "V2": {
+        "hard": 11,
+        "normal": 21,
+        "easy": 18
+      },
+      "V3": {
+        "hard": 4,
+        "normal": 24,
+        "easy": 22
+      }
+    },
+    "g8-m2": {
+      "V1": {
+        "hard": 27,
+        "normal": 18,
+        "easy": 5
+      },
+      "V2": {
+        "hard": 32,
+        "normal": 14,
+        "easy": 4
+      },
+      "V3": {
+        "hard": 45,
+        "normal": 5,
+        "easy": 0
+      }
+    },
+    "g10-m3": {
+      "V1": {
+        "hard": 3,
+        "normal": 20,
+        "easy": 27
+      },
+      "V2": {
+        "hard": 8,
+        "normal": 17,
+        "easy": 25
+      },
+      "V3": {
+        "hard": 13,
+        "normal": 25,
+        "easy": 12
+      }
+    }
+  },
+  "primary_cell_rho": [
+    {
+      "recipe": "g6-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.3025173790917705
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.2721886647502546
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.24386133764954937
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": -0.1100257027709352
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": -0.05230730131732984
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": -0.016233300408826503
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.35249070892713186
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.35249070892713186
+    },
+    {
+      "recipe": "g6-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.33716502593030007
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V1",
+      "rho": 0.23136528578556897
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V2",
+      "rho": 0.2492492328689081
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V3",
+      "rho": 0.3756291255911714
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": -0.09205713918288301
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": -0.0639243973553788
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.0060069911375453845
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.42159367447896334
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.4355537299252866
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.40204959685411074
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.21959364186856287
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.22591288336118337
+    },
+    {
+      "recipe": "g10-m4",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.2543494700779757
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V1",
+      "rho": 0.4029247862359662
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V2",
+      "rho": 0.3339037810215976
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V3",
+      "rho": 0.29805979686081274
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.19275449496921299
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.20582434059713078
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.2200262200983328
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_early",
+      "model": "V1",
+      "rho": 0.19095702614550147
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_early",
+      "model": "V2",
+      "rho": 0.10608723674750083
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_early",
+      "model": "V3",
+      "rho": 0.10608723674750083
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": -0.1614606488186499
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": -0.18392473908907075
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": -0.2400849647651229
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_early",
+      "model": "V1",
+      "rho": 0.21943699408049172
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_early",
+      "model": "V2",
+      "rho": 0.1593805535953045
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_early",
+      "model": "V3",
+      "rho": 0.15014110121296803
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.07250274556036462
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.07676761294626842
+    },
+    {
+      "recipe": "g8-m2",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.10235681726169123
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V1",
+      "rho": 0.024103548380599783
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V2",
+      "rho": 0.041091421574373566
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_early",
+      "model": "V3",
+      "rho": 0.12032542635740903
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.22194855516984385
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.20862245144329009
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Greedy",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.22659482122009825
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.4048416079433754
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.4104256301219047
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Objective",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.4690578629964625
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V1",
+      "rho": 0.14179228465460467
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V2",
+      "rho": 0.1298098380640747
+    },
+    {
+      "recipe": "g10-m3",
+      "agent": "Lookahead",
+      "endpoint": "exact_challenge",
+      "model": "V3",
+      "rho": 0.17773962442619456
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "raw_candidates": 1985,
+  "verdicts": {
+    "WIN_CERTIFIED": 200,
+    "UNKNOWN": 73,
+    "FAIL_CERTIFIED": 1712
+  },
+  "certified": 200,
+  "models": {
+    "V1": {
+      "macro_rho": 0.24380526088986887,
+      "primary_cells": 17,
+      "tier_counts": {
+        "easy": 70,
+        "normal": 75,
+        "hard": 55
+      },
+      "monotonic_cells": 11,
+      "nonconstant_complete_tier_cells": 17,
+      "same_tier_as_v1": 200,
+      "two_tiers_from_v1": 0,
+      "by_agent": {
+        "Greedy": 0.17227064629631053,
+        "Objective": 0.23709226119195104,
+        "Lookahead": 0.3506667210187684
+      },
+      "by_recipe": {
+        "g6-m3": 0.052309623795297605,
+        "g10-m4": 0.18922092929941461,
+        "g8-m2": 0.334604172437113,
+        "g10-m3": 0.3058129529803854
+      },
+      "by_endpoint": {
+        "exact_early": 0.3057525092139299,
+        "exact_challenge": 0.21799390742151012
+      }
+    },
+    "V2": {
+      "macro_rho": 0.24236004444823608,
+      "primary_cells": 17,
+      "tier_counts": {
+        "normal": 75,
+        "easy": 65,
+        "hard": 60
+      },
+      "monotonic_cells": 9,
+      "nonconstant_complete_tier_cells": 17,
+      "same_tier_as_v1": 176,
+      "two_tiers_from_v1": 0,
+      "by_agent": {
+        "Greedy": 0.16596611762463212,
+        "Objective": 0.24420780189011418,
+        "Lookahead": 0.3474637845594035
+      },
+      "by_recipe": {
+        "g6-m3": 0.09408781737212633,
+        "g10-m4": 0.1740905022591903,
+        "g8-m2": 0.3269577622313839,
+        "g10-m3": 0.2949371802696425
+      },
+      "by_endpoint": {
+        "exact_early": 0.30838910807641606,
+        "exact_challenge": 0.2148479346031611
+      }
+    },
+    "V3": {
+      "macro_rho": 0.25104125403543726,
+      "primary_cells": 17,
+      "tier_counts": {
+        "easy": 82,
+        "normal": 56,
+        "hard": 62
+      },
+      "monotonic_cells": 12,
+      "nonconstant_complete_tier_cells": 14,
+      "same_tier_as_v1": 103,
+      "two_tiers_from_v1": 4,
+      "by_agent": {
+        "Greedy": 0.17387824069155727,
+        "Objective": 0.25657486986592365,
+        "Lookahead": 0.3535358568863828
+      },
+      "by_recipe": {
+        "g6-m3": 0.1051248091330506,
+        "g10-m4": 0.1888177382304837,
+        "g8-m2": 0.32283399131648105,
+        "g10-m3": 0.315012997595615
+      },
+      "by_endpoint": {
+        "exact_early": 0.325740102781521,
+        "exact_challenge": 0.219916733724569
+      }
+    },
+    "V2_cap9": {
+      "macro_rho": 0.2450484844576975,
+      "primary_cells": 17,
+      "tier_counts": {
+        "normal": 72,
+        "easy": 64,
+        "hard": 64
+      },
+      "monotonic_cells": 8,
+      "nonconstant_complete_tier_cells": 17,
+      "same_tier_as_v1": 159,
+      "two_tiers_from_v1": 0,
+      "by_agent": {
+        "Greedy": 0.16623770866101525,
+        "Objective": 0.2533263681682416,
+        "Lookahead": 0.34710568686250853
+      },
+      "by_recipe": {
+        "g6-m3": 0.08727454752223925,
+        "g10-m4": 0.16628806241476835,
+        "g8-m2": 0.327649339669022,
+        "g10-m3": 0.31823807638523366
+      },
+      "by_endpoint": {
+        "exact_early": 0.3108130434766631,
+        "exact_challenge": 0.21764658486646185
+      }
+    },
+    "V2_mean": {
+      "macro_rho": 0.24938466795986486,
+      "primary_cells": 17,
+      "tier_counts": {
+        "easy": 73,
+        "hard": 61,
+        "normal": 66
+      },
+      "monotonic_cells": 12,
+      "nonconstant_complete_tier_cells": 17,
+      "same_tier_as_v1": 137,
+      "two_tiers_from_v1": 0,
+      "by_agent": {
+        "Greedy": 0.15921844548201933,
+        "Objective": 0.26131537751105877,
+        "Lookahead": 0.3636866698776547
+      },
+      "by_recipe": {
+        "g6-m3": 0.04532912042464724,
+        "g10-m4": 0.18506244571792516,
+        "g8-m2": 0.3254913020071662,
+        "g10-m3": 0.3525885997822657
+      },
+      "by_endpoint": {
+        "exact_early": 0.32466333498697963,
+        "exact_challenge": 0.218018556698567
+      }
+    }
+  },
+  "comparisons_vs_v1": {
+    "V2": {
+      "delta": -0.001445216441632785,
+      "ci95": [
+        -0.01566011713328138,
+        0.01215255182935741
+      ]
+    },
+    "V3": {
+      "delta": 0.007235993145568387,
+      "ci95": [
+        -0.016337828663773923,
+        0.029348057001298184
+      ]
+    }
+  },
+  "mean_random_extra_clears": 6.095748682260687,
+  "median_random_extra_clears": 5.807206851163305
+}
